@@ -1,3 +1,63 @@
 <resources>
     <string name="app_name">MomsCare</string>
+    <string name="btnBMICal">BMI Calculator</string>
+    <string name="btnWeightCon">Weight Convertor</string>
+    <string name="btnMacroCal">Calories Calculator</string>
+    <string name="btnDuedate">Due Date Calculator</string>
+
+    <!-- side nav bar -->
+    <string name="Open">OPEN</string>
+    <string name="Close">CLOSE</string>
+
+    <string name="SignUptxtName">User Name</string>
+    <string name="SignUptxtEmail">Email</string>
+    <string name="SignUptxtPassword">Password</string>
+    <string name="SignUptxtGender">Gender</string>
+    <string name="SignUptxtHeight">Height</string>
+    <string name="SignUptxtWeight">Weight</string>
+    <string name="SignUptxtAge">Age</string>
+    <string name="SignUpNamee" />
+    <string name="SignUpEmail" />
+    <string name="SignUpPassword" />
+    <string name="SignUpGender" />
+    <string name="SignUpbtnSignUp">SIGN UP</string>
+    <string name="SignUpbtnSignIn">SIGN IN</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="BMIResult">Result</string>
+    <string name="txtHealthyBMI">Healthy BMI</string>
+    <string name="txtHealthyWeight">Healthy Weight</string>
+    <string name="txtResultHbmi" />
+    <string name="txtResultHweight" />
+    <string name="ResultBMI">BMI</string>
+    <string name="UPtxt">User Profile</string>
+    <string name="UPbtnUpdate">Update Details</string>
+    <string name="UPtxtDelete">Delete Account</string>
+    <string name="todotxt">To Do List</string>
+    <string name="SignInuser_name">User Name</string>
+    <string name="SignInPassword">Password</string>
+    <string name="SignInpassword">Password</string>
+    <string name="SignInbtnSignIn">SIGN IN</string>
+    <string name="SignIntxtNewUser">Are you new to GET-FIT?</string>
+    <string name="SignInNewUserSignUp">Sign Up</string>
+    <string name="SignIntxtForgotpass">Forgot your password?</string>
+    <string name="SignInpasswordReset">Reset</string>
+    <string name="txtList_name">To Do List</string>
+    <string name="SignIn">SIGN IN</string>
+    <string name="button">BMI</string>
+    <string name="GETFIT">GET  FIT!</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="button_mealSearch">Find</string>
+    <string name="navBarProfile" textSize="18sp">Profile</string>
+    <string name="SignUpName">name</string>
+
 </resources>

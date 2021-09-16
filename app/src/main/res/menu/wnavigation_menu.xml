@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/myProfile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="My Profile"></item>
+    <item
+        android:id="@+id/toDoNav"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="ToDoList"></item>
+    <item
+        android:id="@+id/woNav"
+        android:icon="@drawable/ic_baseline_fitness_center_24"
+        android:title="WorkOut Packages"></item>
+    <item
+        android:id="@+id/nutritionNav"
+        android:icon="@drawable/nutrition"
+        android:title="Meal Plans"></item>
+    <item
+        android:id="@+id/suppleNav"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Medical schdule"></item>
+
+
+</menu>

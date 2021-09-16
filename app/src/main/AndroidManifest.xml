@@ -8,16 +8,31 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MomsCare">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        android:theme="@style/Theme.MomsCare"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
+        <activity android:name=".Workout.WorkOuts"></activity>
+        <activity android:name=".Workout.WeightConverter" />
+        <activity android:name=".ToDo_List.SignUp" />
+        <activity android:name=".ToDo_List.SignIn" />
+        <activity android:name=".WelcomeIntaface" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <!-- Start of ToDO List -->
+      <activity
+          android:name="com.example.momscare.MainActivity"
+          android:label="To Do List"
+          android:parentActivityName="com.example.momscare.ToDo_List.SignIn">
+      </activity>
+        <!-- Start of Work Out -->
+
+
+
+  </application>
 
 </manifest>

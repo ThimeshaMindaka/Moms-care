@@ -1,18 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/bac4"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/btnMacroCall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#9503A9F4"
+        tools:context=".Nutrition.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="422dp"
+            android:layout_height="139dp"
+            app:srcCompat="@drawable/cal3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="658dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnBMICal"
+                android:layout_width="328dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/buttons"
+                android:backgroundTint="@color/ccc"
+                android:text="@string/btnBMICal" />
+
+            <Button
+                android:id="@+id/btnWeightCon"
+                android:layout_width="328dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/buttons"
+                android:backgroundTint="@color/ccc"
+                android:text="@string/btnWeightCon" />
+
+            <Button
+                android:layout_width="328dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/buttons"
+                android:backgroundTint="@color/ccc"
+                android:text="@string/btnMacroCal" />
+
+            <Button
+                android:id="@+id/btnDuedate"
+                android:layout_width="328dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/buttons"
+                android:backgroundTint="@color/ccc"
+                android:text="@string/btnDuedate" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="412dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/navigate_todo"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#E91E63"
+                android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
+                app:cornerRadius="0dp" />
+
+
+            <Button
+                android:id="@+id/navigate_workout"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:height="1dp"
+                android:backgroundTint="#E91E63"
+                android:drawableTop="@drawable/ic_baseline_fitness_center_24"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/navigate_nutrition"
+                android:layout_width="109dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:backgroundTint="#E91E63"
+                android:drawableTop="@drawable/ic_baseline_fastfood_24"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/navigate_supplement"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:backgroundTint="#E91E63"
+                android:drawableTop="@drawable/ic_baseline_add_circle_24"
+                android:textSize="14sp"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#BE03A9F4"
+        app:headerLayout="@layout/wnavigation_header"
+        app:menu="@menu/wnavigation_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
