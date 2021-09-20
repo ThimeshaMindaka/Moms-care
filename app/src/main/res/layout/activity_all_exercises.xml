@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6"
+    tools:context=".Workout.AllExercises">
+
+
+    <ListView
+        android:id="@+id/lworkouts"
+        android:layout_width="307dp"
+        android:layout_height="409dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="143dp"
+        android:background="@drawable/buttons2"
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/allExe_tv1"
+        android:layout_width="314dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/bangers"
+        android:gravity="center_horizontal"
+        android:text="@string/woAllWorkOuts"
+        android:textAlignment="center"
+        android:textColor="@color/ccc"
+        android:textSize="36sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addWO_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="309dp"
+        android:layout_marginTop="584dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="@color/ccc"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</RelativeLayout>

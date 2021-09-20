@@ -8,7 +8,6 @@
     <!-- side nav bar -->
     <string name="Open">OPEN</string>
     <string name="Close">CLOSE</string>
-
     <string name="SignUptxtName">User Name</string>
     <string name="SignUptxtEmail">Email</string>
     <string name="SignUptxtPassword">Password</string>
@@ -37,7 +36,7 @@
     <string name="SignInPassword">Password</string>
     <string name="SignInpassword">Password</string>
     <string name="SignInbtnSignIn">SIGN IN</string>
-    <string name="SignIntxtNewUser">Are you new to GET-FIT?</string>
+    <string name="SignIntxtNewUser">Are you new to MomsCare?</string>
     <string name="SignInNewUserSignUp">Sign Up</string>
     <string name="SignIntxtForgotpass">Forgot your password?</string>
     <string name="SignInpasswordReset">Reset</string>
@@ -59,5 +58,60 @@
     <string name="button_mealSearch">Find</string>
     <string name="navBarProfile" textSize="18sp">Profile</string>
     <string name="SignUpName">name</string>
+    <string name="ResultBMII">Here\'Your BMI</string>
+    <string name="getfit">Get Start</string>
+
+
+    <string name="btnAddExercise">ADD EXERCISE</string>
+    <string name="btnDeleteExercise">DELETE EXERCISE</string>
+    <string name="btnWeightConverter">WEIGHT CONVERTER</string>
+    <string name="btnUpdateExercise">UPDATE EXERCISE</string>
+    <string name="WorkOutId">WorkOut Id</string>
+    <string name="WorkOutName">WorkOut Name</string>
+    <string name="WorkOutPackageType">Package Type</string>
+    <string name="WorkOutCalorieBurnt">Calorie Burnt</string>
+    <string name="WorkOutDuration">Duration</string>
+    <string name="WorkOutsteps">Steps</string>
+    <string name="WorkOutminutes">min</string>
+    <string name="WorkOutAddExercise">ADD EXERCISE</string>
+    <string name="WorkOutAddBtn">ADD</string>
+    <string name="startButton">START</string>
+    <string name="StopButton">STOP</string>
+    <string name="TimeDownCounter">TIME DOWN COUNTER</string>
+    <string name="kgToPounds">Kilograms to Pounds</string>
+    <string name="PoundsToKg">Pounds To Kilograms</string>
+    <string name="kgToStones">Kilograms To Stones</string>
+    <string name="weightConvertBtn">Convert</string>
+    <string name="weightConverter">WEIGHT CONVERTER</string>
+    <string name="ModifyExercise">MODIFY EXERCISE</string>
+    <string name="Workoutdeletebtn">DELETE</string>
+    <string name="WorkOutupdatebtn">UPDATE</string>
+    <string name="WorkOutShowbtn">RESET</string>
+    <string-array name="Spinner_Item">
+        <item>Muscle-Gain</item>
+        <item>Fat-Loss</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fatLoss">FAT-LOSS</string>
+    <string name="muscleGain">MUSCLE-GAIN</string>
+    <string name="ViewExeHint1">Enter No of Repeats</string>
+    <string name="calorieBurnOutBtn">CALORIES BURN OUT</string>
+    <string name="WorkOutTimePeriod">Time Period(min)</string>
+    <string name="WorkOutStart">START</string>
+    <string name="MuscleGainBtn">MUSCLE GAIN WORKOUT</string>
+    <string name="FatLossBtn">FAT-LOSS WORKOUT</string>
+    <string name="WOpackages">WORK-OUT PACKAGES</string>
+    <string name="woAllWorkOuts">List of Workouts</string>
+    <string name="moveToWCBtn">Weight Converter</string>
+    <string name="WorkOutAddImgBtn">Upload Img</string>
+    <string name="ImageUploadTv">Upload an Image</string>
+    <string name="wo_ImgUploadDltBtn">DELETE IMAGE</string>
+    <string name="wo_ImgUploadSaveBtn">SAVE IMAGE</string>
+    <string name="WorkOutGetImagebtn">Image</string>
+    <string name="woShowImage">WorkOut Image</string>
+    <string name="ViewExeImgUpdateBtn">CHANGE IMAGE</string>
+    <string name="txt3">WORK OUTS DASHBORD</string>
+    <string name="pernatal_frgmnt_tv1">Prenatal Body Coaching</string>
 
 </resources>
