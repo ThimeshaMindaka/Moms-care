@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.momscare.Medical.Medical_info;
 import com.example.momscare.ToDo_List.SignIn;
 import com.example.momscare.ToDo_List.SignUp;
 

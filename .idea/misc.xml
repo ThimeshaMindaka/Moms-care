@@ -3,11 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_add_shchedule.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_doc_dash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_doctor_dash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_duedate_cal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_duedate_calculator.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_duedate_rep.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_duedate_reply.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_med_shchedule.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_medical_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_medical_information.xml" value="0.23796296296296296" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_medical_shchedule.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_update_shc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_update_shchedule.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_view_doc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_view_doctor.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/menu/wnavigation_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/private projects/Android Studio/MomsCare/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

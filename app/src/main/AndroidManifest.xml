@@ -4,14 +4,38 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MomsCare"
-        android:largeHeap="true"
-        android:hardwareAccelerated="false">
-        <activity android:name=".Workout.WorkOuts"></activity>
+        android:theme="@style/Theme.MomsCare">
+        <activity
+            android:name=".Medical.View_doc"
+             />
+        <activity
+            android:name=".Medical.Update_shchedule"
+             />
+        <activity
+            android:name=".Medical.Medical_shchedule"
+             />
+        <activity
+            android:name=".Medical.Medical_info"
+             />
+        <activity
+            android:name=".Medical.Duedate_rep"
+             />
+        <activity
+            android:name=".Medical.Duedate_cal"
+             />
+        <activity
+            android:name=".Medical.Doc_dash"
+             />
+        <activity
+            android:name=".Medical.Add_shchedule"
+            android:exported="true" />
+        <activity android:name=".Workout.WorkOuts" />
         <activity android:name=".Workout.WeightConverter" />
         <activity android:name=".ToDo_List.SignUp" />
         <activity android:name=".ToDo_List.SignIn" />
@@ -22,17 +46,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Start of ToDO List -->
-      <activity
-          android:name="com.example.momscare.MainActivity"
-          android:label="To Do List"
-          android:parentActivityName="com.example.momscare.ToDo_List.SignIn">
-      </activity>
-        <!-- Start of Work Out -->
-
-
-
-  </application>
+        </activity> <!-- Start of ToDO List -->
+        <activity
+            android:name=".MainActivity"
+            android:label="To Do List"
+            android:parentActivityName=".ToDo_List.SignIn" />
+    </application>
 
 </manifest>
