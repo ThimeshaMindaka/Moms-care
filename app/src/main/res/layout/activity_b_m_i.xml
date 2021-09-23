@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcom"
+    tools:context=".ToDo_List.BMI">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="614dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="71dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHealthyWeight"
+        android:layout_width="114dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Weight range"
+        android:textColor="@color/black"
+
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHealthyBMI" />
+
+    <TextView
+        android:id="@+id/SignUptxtHeight"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="83dp"
+        android:text="@string/SignUptxtHeight"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUptxtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="35dp"
+
+        android:text="@string/SignUptxtWeight"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtHeight" />
+
+    <TextView
+        android:id="@+id/SignUptxtAge"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/SignUptxtAge"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtWeight" />
+
+    <TextView
+        android:id="@+id/SignUpHeight"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="                     cm"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtHeight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUpWeight"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="                      Kg"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtWeight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUpAge"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtAge"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/BMIResult"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext"
+        android:hint="Status"
+        android:text="@string/BMIResult"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="@color/teal_200"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpAge" />
+
+    <TextView
+        android:id="@+id/txtHealthyBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="BMI status"
+
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMIResult" />
+
+    <TextView
+
+        android:id="@+id/txtResultHbmi"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext"
+        android:text="@string/txtResultHbmi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtHealthyBMI"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultHweight"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext"
+        android:text="@string/txtResultHweight"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultHbmi" />
+
+    <Button
+        android:id="@+id/getfit"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/buttons"
+
+        android:text="@string/getfit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultHweight" />
+
+    <TextView
+        android:id="@+id/ResultBMII"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/spicy_rice"
+        android:text="Here's Your BMI"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
