@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Workout.WorkoutDashBoard">
+
+
+    <ImageView
+        android:id="@+id/bgImg1"
+        android:layout_width="519dp"
+        android:layout_height="795dp"
+        android:foregroundTint="#000000"
+        android:foregroundTintMode="src_over"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687"
+        app:srcCompat="@drawable/bac5" />
+
+    <Button
+        android:id="@+id/btnAddExercise"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/armata"
+        android:onClick="moveToAddExercise"
+        android:background="@drawable/buttons"
+        android:text="@string/btnAddExercise"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdateExercise"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdateExercise"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndltExercise"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/armata"
+        android:onClick="moveToAllList"
+        android:background="@drawable/buttons"
+        android:text="@string/btnDeleteExercise"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeightConverter"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnWeightConverter"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateExercise" />
+
+    <Button
+        android:id="@+id/btnWeightConverter"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/armata"
+        android:onClick="moveToWeightConverter"
+        android:text="@string/btnWeightConverter"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndltExercise" />
+
+    <Button
+        android:id="@+id/btnUpdateExercise"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/armata"
+        android:onClick="moveToAllList"
+        android:background="@drawable/buttons"
+        android:text="@string/btnUpdateExercise"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btndltExercise"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btndltExercise"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddExercise" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/bangers"
+        android:text="@string/txt3"
+        android:textColor="@color/ccc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="648dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cyculer" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="78dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="352dp"
+        android:layout_marginBottom="624dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cycular2" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="143dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="332dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cyculer" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="292dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cycular2" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="332dp"
+        android:layout_marginBottom="640dp"
+        android:rotation="-72"
+        android:rotationX="-201"
+        android:rotationY="169"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cyculer" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeightConverter"
+        app:srcCompat="@drawable/cycular2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

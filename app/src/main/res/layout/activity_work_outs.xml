@@ -4,6 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bac4"
     tools:context=".Workout.WorkOuts">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="403dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="618dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/navigate_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/ccc"
+            android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/navigate_workout"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/ccc"
+            android:drawableTop="@drawable/ic_baseline_fitness_center_24"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/navigate_nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/ccc"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/navigate_supplement"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/ccc"
+            android:drawableTop="@drawable/ic_baseline_add_circle_24"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pkg_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/WOpackages"
+        android:textColor="@color/ccc"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="410dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/pckg_btn1"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:onClick="changeFragment"
+            android:text="@string/MuscleGainBtn"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pckg_btn2"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="changeFragment"
+            android:text="@string/FatLossBtn"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fgmntDefault"
+        android:name="com.example.momscare.Workout.PrenatalBodyCoachingFragment"
+        android:layout_width="377dp"
+        android:layout_height="445dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pkg_tv1"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

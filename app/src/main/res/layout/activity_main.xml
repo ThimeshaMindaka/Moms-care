@@ -67,6 +67,7 @@
 
             <Button
                 android:id="@+id/btnDuedate"
+
                 android:layout_width="328dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="32dp"
@@ -107,7 +108,7 @@
 
             <Button
                 android:id="@+id/navigate_nutrition"
-                android:layout_width="109dp"
+                android:layout_width="100dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:backgroundTint="#E91E63"
@@ -130,7 +131,7 @@
         android:layout_width="225dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:background="#BE03A9F4"
+        android:background="#BEF1F1F1"
         app:headerLayout="@layout/wnavigation_header"
         app:menu="@menu/wnavigation_menu">
 

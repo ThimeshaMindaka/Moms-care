@@ -18,7 +18,7 @@
         android:title="WorkOut Packages"></item>
     <item
         android:id="@+id/nutritionNav"
-        android:icon="@drawable/nutrition"
+        android:icon="@drawable/ic_baseline_fastfood_24"
         android:title="Meal Plans"></item>
     <item
         android:id="@+id/suppleNav"
