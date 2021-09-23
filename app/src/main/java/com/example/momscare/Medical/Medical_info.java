@@ -29,5 +29,12 @@ public class Medical_info extends AppCompatActivity {
         Intent opnDue = new Intent( Medical_info.this,Duedate_cal.class);
         startActivity(opnDue);
     }
-
+    public void openMS(View view){
+        Intent opnMS = new Intent(Medical_info.this,Medical_shchedule.class);
+        startActivity(opnMS);
+    }
+    public void viewDoc(View view) {
+        Intent vDoc = new Intent(Medical_info.this, View_doc.class);
+        startActivity(vDoc);
+    }
 }
