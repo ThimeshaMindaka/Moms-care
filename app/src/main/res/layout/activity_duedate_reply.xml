@@ -112,28 +112,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288" />
 
+
     <TextView
         android:id="@+id/txt24"
-        android:layout_width="167dp"
-        android:layout_height="91dp"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
         android:text="@string/txt24"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
-
-
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="411dp"
-        android:layout_height="274dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt24"
-        app:srcCompat="@drawable/congratu" />
+        app:layout_constraintVertical_bias="0.672" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -185,5 +176,16 @@
             app:cornerRadius="0dp"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt004"
+        android:layout_width="156dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="132dp"
+        android:text="@string/txt004"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/txt23" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
