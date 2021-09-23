@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.momscare.R;
@@ -49,7 +50,7 @@ public class AllExercises extends AppCompatActivity {
         for(Object woName : unames){
             arrayList.add(woName.toString());
         }
-        //Toast.makeText(this, unames.toString(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, unames.toString(),Toast.LENGTH_SHORT).show();
 
         lworkout.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
