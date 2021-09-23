@@ -122,7 +122,7 @@
         <string name="txt46">Due Date Calculator</string>
         <string name="txt47">Calculation Method :</string>
         <string name="txt48">Last Period</string>
-        <string name="txt49">The First Day Of Your Last Period :</string>
+        <string name="txt49"> Month Of Your Last Period :</string>
         <string name="txt50" />
         <string name="btn9">Calculate</string>
         <string name="txt51">Calculate Your Due Date</string>
@@ -146,9 +146,11 @@
         <string name="btn15">Common Problems</string>
         <string name="btn16">Medical Schedule</string>
         <string name="btn17">View Doctors</string>
-
-
-
+    <string name="txt00" />
+    <string name="txt002">Month(Number only):</string>
+    <string name="txt001">Year :</string>
+    <string name="txt003">Last Period</string>
+    <string name="txt004" />
 
 
 </resources>
