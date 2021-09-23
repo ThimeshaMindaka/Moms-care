@@ -12,35 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MomsCare">
 
-        android:theme="@style/Theme.MomsCare">
-        <activity
-            android:name=".Medical.View_doc"
-             />
-        <activity
-            android:name=".Medical.Update_shchedule"
-             />
-        <activity
-            android:name=".Medical.Medical_shchedule"
-             />
-        <activity
-            android:name=".Medical.Medical_info"
-             />
-        <activity
-            android:name=".Medical.Duedate_rep"
-             />
-        <activity
-            android:name=".Medical.Duedate_cal"
-             />
-        <activity
-            android:name=".Medical.Doc_dash"
-             />
-        <activity
-            android:name=".Medical.Add_shchedule"
-            android:exported="true" />
-        <activity android:name=".Workout.WorkOuts" />
-        <activity android:name=".Workout.WeightConverter" />
-        <activity android:name=".ToDo_List.SignUp" />
-        <activity android:name=".ToDo_List.SignIn" />
         <activity android:name=".WelcomeIntaface" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -71,6 +42,29 @@
         <activity
             android:name=".Workout.WorkOuts"
             android:label="WorkOut Packages" />
+
+        <!-- Start of Medical -->
+        <activity
+            android:name=".Medical.View_doc"
+            />
+        <activity
+            android:name=".Medical.Update_shchedule"
+            />
+        <activity
+            android:name=".Medical.Medical_shchedule"
+            />
+        <activity
+            android:name=".Medical.Medical_info"
+            />
+        <activity
+            android:name=".Medical.Duedate_rep"
+            />
+        <activity
+            android:name=".Medical.Duedate_cal"
+            />
+        <activity
+            android:name=".Medical.Doc_dash"
+            />
 
 
         <!-- Start of Workout management -->
@@ -110,12 +104,6 @@
             android:name="com.example.momscare.Workout.WorkoutDashBoard"
             android:label="WorkOut DashBoard" />
 
-    </application>
-        </activity> <!-- Start of ToDO List -->
-        <activity
-            android:name=".MainActivity"
-            android:label="To Do List"
-            android:parentActivityName=".ToDo_List.SignIn" />
     </application>
 
 </manifest>
