@@ -227,7 +227,7 @@ public class DBHelper extends SQLiteOpenHelper {
         };
 
         String selection = WorkOutMaster.WorkOuts.COLUMN_NAME_WORKOUT_PACKAGE + "  = ? ";
-        String []selectionArgs = {"Muscle-Gain"};
+        String []selectionArgs = {"Postpartum"};
 
         Cursor cursor = db.query(WorkOutMaster.WorkOuts.TABLE_NAMES,
                 projection,
@@ -270,7 +270,7 @@ public class DBHelper extends SQLiteOpenHelper {
         };
 
         String selection = WorkOutMaster.WorkOuts.COLUMN_NAME_WORKOUT_PACKAGE + "  = ? ";
-        String []selectionArgs = {"Fat-Loss"};
+        String []selectionArgs = {"Prenatal"};
 
         Cursor cursor = db.query(WorkOutMaster.WorkOuts.TABLE_NAMES,
                 projection,
