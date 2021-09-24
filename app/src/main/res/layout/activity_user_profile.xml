@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac4"
+    tools:context=".ToDo_List.UserProfile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="412dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+
+            android:id="@+id/navigate_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_fitness_center_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_supplement"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_add_circle_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="405dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/UPtxt"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/UPtxt"
+            android:textColor="@color/ccc"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/userProfilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_weight="1"
+            app:c_border="true"
+            app:c_border_color="@color/ccc"
+            app:c_border_width="5.5dp"
+            app:c_shadow="true"
+            app:c_shadow_color="#000"
+            app:c_shadow_gravity="end"
+            app:c_shadow_radius="5.5"
+            app:srcCompat="@drawable/user_profile" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SignUptxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/SignUptxtName"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUptxtEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <EditText
+        android:id="@+id/SignUpName"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType=""
+        android:textAlignment="textStart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/SignUptxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/SignUptxtEmail"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUptxtGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtName" />
+
+    <EditText
+        android:id="@+id/SignUpEmail"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType=""
+        android:textAlignment="textStart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/SignUptxtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/SignUptxtGender"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUptxtHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtEmail" />
+
+    <EditText
+        android:id="@+id/SignUpGender"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType=""
+        android:textAlignment="textStart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/SignUptxtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/SignUptxtHeight"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUptxtWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtGender" />
+
+    <EditText
+        android:id="@+id/SignUpHeight"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="                                     cm"
+        android:inputType="number"
+        android:textAlignment="textStart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtHeight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUptxtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/SignUptxtWeight"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUptxtAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtHeight" />
+
+    <EditText
+        android:id="@+id/SignUpWeight"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="                                      Kg"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtWeight"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUptxtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/SignUptxtAge"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/UPbtnUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtWeight" />
+
+
+    <EditText
+        android:id="@+id/SignUpAge"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="textStart"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/UPbtnUpdate"
+        android:layout_width="136dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/buttons"
+        android:text="@string/UPbtnUpdate"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUptxtAge" />
+
+    <Button
+        android:id="@+id/UPtxtDelete"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/buttons"
+        android:text="@string/UPtxtDelete"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/UPbtnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpAge" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
