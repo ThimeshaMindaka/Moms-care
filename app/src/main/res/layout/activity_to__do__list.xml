@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac4"
+    android:foregroundTint="#FFFFFF"
+    tools:context=".ToDo_List.To_Do_List">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="420dp"
+            android:layout_height="786dp"
+            android:background="#2AFFFFFF"
+
+            app:srcCompat="@drawable/todo4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="-49dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="417dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+                <Button
+                    android:id="@+id/navigate_todo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
+                    app:cornerRadius="0dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/navigate_workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:height="1dp"
+                    android:backgroundTint="@color/ccc"
+                    android:drawableTop="@drawable/ic_baseline_fitness_center_24"
+                    app:cornerRadius="0dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/navigate_nutrition"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E91E63"
+                    android:drawableTop="@drawable/ic_baseline_fastfood_24"
+                    app:cornerRadius="0dp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/navigate_supplement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#E91E63"
+                    android:drawableTop="@drawable/ic_baseline_add_circle_24"
+                    android:textSize="14sp"
+                    app:cornerRadius="0dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="26dp"
+            android:clickable="true"
+            app:backgroundTint="@color/ccc"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/wo_imageTitle"
+            android:layout_width="214dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="104dp"
+            android:background="@color/purple_700"
+            android:fontFamily="@font/spicy_rice"
+            android:text="@string/txtList_name"
+            android:textColor="@color/ccc"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="414dp"
+            android:layout_height="453dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/wo_imageTitle"
+            app:layout_constraintVertical_bias="0.203"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <ImageView
+            android:id="@+id/empty_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:alpha="0.1"
+            android:outlineAmbientShadowColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bac4" />
+
+        <TextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.4"
+            android:text="No Data."
+            android:textSize="30sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_imageview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
