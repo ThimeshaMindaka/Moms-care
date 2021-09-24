@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.momscare">
+    <!-- Camera storage permisiions for image pick -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -36,51 +39,110 @@
             android:name=".ToDo_List.SignUp"
             android:label="Sign Up" /> <!-- Start of ToDO List -->
         <activity
+            android:name=".ToDo_List.UpdateToDo"
+            android:parentActivityName=".ToDo_List.To_Do_List" />
+        <activity
+            android:name=".ToDo_List.Add_ToDo"
+            android:label="Add List"
+            android:parentActivityName=".ToDo_List.To_Do_List" />
+        <activity
+            android:name=".ToDo_List.To_Do_List"
+            android:label="To Do List"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
-            android:label=""
+            android:label="Moms care"
             android:parentActivityName=".ToDo_List.SignIn" />
         <activity
+            android:name=".ToDo_List.UserProfile"
+            android:label="User Profile"
+            android:parentActivityName=".Workout.WorkOuts" />
+        <activity
             android:name=".Workout.WorkOuts"
-            android:label="WorkOut Packages" />
-
-
-        <!-- Start of Workout management -->
+            android:label="WorkOut Packages" /> <!-- Start of Workout management -->
         <activity
-            android:name="com.example.momscare.Workout.ViewExerciseImage"
+            android:name=".Workout.ViewExerciseImage"
             android:label="WorkOut Image"
-            android:parentActivityName="com.example.momscare.Workout.ModifyExercise" />
+            android:parentActivityName=".Workout.ModifyExercise" />
         <activity
-            android:name="com.example.momscare.Workout.ImageUpload"
+            android:name=".Workout.ImageUpload"
             android:label="Upload WorkOut Image"
-            android:parentActivityName="com.example.momscare.Workout.AddExercise" />
+            android:parentActivityName=".Workout.AddExercise" />
         <activity
-            android:name="com.example.momscare.Workout.AllExercises"
+            android:name=".Workout.AllExercises"
             android:label="WorkOuts Listing"
-            android:parentActivityName="com.example.momscare.Workout.WorkoutDashBoard" />
+            android:parentActivityName=".Workout.WorkoutDashBoard" />
         <activity
-            android:name="com.example.momscare.Workout.ViewExercise"
+            android:name=".Workout.ViewExercise"
             android:label="Exercise"
-            android:parentActivityName="com.example.momscare.Workout.WorkOuts" />
+            android:parentActivityName=".Workout.WorkOuts" />
         <activity
-            android:name="com.example.momscare.Workout.ModifyExercise"
+            android:name=".Workout.ModifyExercise"
             android:label="Modify Exercise"
-            android:parentActivityName="com.example.momscare.Workout.AllExercises" />
+            android:parentActivityName=".Workout.AllExercises" />
         <activity
-            android:name="com.example.momscare.Workout.WeightConverter"
+            android:name=".Workout.WeightConverter"
             android:label="Weight Converter"
-            android:parentActivityName="com.example.momscare.Workout.WorkoutDashBoard" />
+            android:parentActivityName=".Workout.WorkoutDashBoard" />
         <activity
-            android:name="com.example.momscare.Workout.Counter"
+            android:name=".Workout.Counter"
             android:label="Count Down Timer"
-            android:parentActivityName="com.example.momscare.Workout.WorkOuts" />
+            android:parentActivityName=".Workout.WorkOuts" />
         <activity
-            android:name="com.example.momscare.Workout.AddExercise"
+            android:name=".Workout.AddExercise"
             android:label="Add Exercise"
-            android:parentActivityName="com.example.momscare.Workout.WorkoutDashBoard" />
+            android:parentActivityName=".Workout.WorkoutDashBoard" />
         <activity
-            android:name="com.example.momscare.Workout.WorkoutDashBoard"
-            android:label="WorkOut DashBoard" />
-
+            android:name=".Workout.WorkoutDashBoard"
+            android:label="WorkOut DashBoard" /> <!-- Image cropper activity -->
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" /> <!-- nuti -->
+        <!-- Start of Nutrition management -->
+        <activity android:name=".Nutrition.NutritionNavigate" />
+        <activity
+            android:name=".Nutrition.user_meal_view"
+            android:label="Meal Plan Details"
+            android:parentActivityName=".Nutrition.ViewMeals" />
+        <activity
+            android:name=".Nutrition.macroCal"
+            android:label="Macro Finder"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Nutrition.macros"
+            android:label="Added Macros"
+            android:parentActivityName=".Nutrition.NutritionNavigate" />
+        <activity
+            android:name=".Nutrition.AddMeal"
+            android:label="Add a Meal"
+            android:parentActivityName=".Nutrition.NutritionNavigate" />
+        <activity
+            android:name=".Nutrition.UpdateMeal"
+            android:label="Update a Meal"
+            android:parentActivityName=".Nutrition.NutritionNavigate" />
+        <activity
+            android:name=".Nutrition.AddMacros"
+            android:label="Add new Macro record"
+            android:parentActivityName=".Nutrition.macros" />
+        <activity
+            android:name=".Nutrition.MealList"
+            android:label="Added Meal Plans"
+            android:parentActivityName=".Nutrition.NutritionNavigate" />
+        <activity
+            android:name=".Nutrition.ViewMeals"
+            android:label="Meal Plans"
+            android:parentActivityName=".MainActivity" /> <!-- Start of Nutrition management -->
+        <activity android:name=".Medical.View_doc" />
+        <activity android:name=".Medical.Medical_info" />
+        <activity android:name=".Medical.Duedate_rep" />
+        <activity android:name=".Medical.Duedate_cal" />
+        <activity android:name=".Medical.Doc_dash" />
+        <activity android:name=".Medical.Add_shchedule" />
+        <activity
+            android:name=".Medical.MedicalShechedule"
+            android:label="Medicale"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Medical.Update_shchedule"
+            android:parentActivityName=".Medical.MedicalShechedule" />
     </application>
 
 </manifest>
