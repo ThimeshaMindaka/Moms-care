@@ -51,16 +51,18 @@
             android:name=".Medical.Update_shchedule"
             />
         <activity
-            android:name=".Medical.Medical_shchedule"
+            android:name=".Medical.MedicalShechedule"
             />
         <activity
             android:name=".Medical.Medical_info"
+            android:label="Medical Information"
             />
         <activity
             android:name=".Medical.Duedate_rep"
             />
         <activity
             android:name=".Medical.Duedate_cal"
+            android:label="Due Date Calculator"
             />
         <activity
             android:name=".Medical.Doc_dash"

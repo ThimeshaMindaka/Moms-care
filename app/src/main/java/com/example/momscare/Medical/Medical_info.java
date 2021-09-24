@@ -1,12 +1,13 @@
 package com.example.momscare.Medical;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.momscare.R;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.momscare.R;
 
 public class Medical_info extends AppCompatActivity {
     // ceating references
@@ -30,7 +31,7 @@ public class Medical_info extends AppCompatActivity {
         startActivity(opnDue);
     }
     public void openMS(View view){
-        Intent opnMS = new Intent(Medical_info.this,Medical_shchedule.class);
+        Intent opnMS = new Intent(Medical_info.this,MedicalShechedule.class);
         startActivity(opnMS);
     }
     public void viewDoc(View view) {

@@ -17,60 +17,11 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bac4" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar8"
-        android:layout_width="414dp"
-        android:layout_height="56dp"
-        android:background="#CF6F90"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
 
 
 
-    <ImageView
-        android:id="@+id/imageView35"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.826"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@drawable/loupe" />
 
-    <ImageView
-        android:id="@+id/imageView36"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02"
-        app:srcCompat="@drawable/user" />
-
-    <TextView
-        android:id="@+id/txt46"
-        android:layout_width="229dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="68dp"
-        android:text="@string/txt46"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
-
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.014" />
 
     <TextView
         android:id="@+id/txt47"
@@ -133,6 +84,7 @@
         android:id="@+id/btn9"
         android:layout_width="142dp"
         android:layout_height="59dp"
+        android:background="@drawable/buttons"
         android:onClick="calculate"
         android:text="@string/btn9"
         app:backgroundTint="#B484BC"

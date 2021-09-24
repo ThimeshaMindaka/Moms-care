@@ -1,8 +1,10 @@
 package com.example.momscare.Medical;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.momscare.R;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.momscare.R;
 
 public class Doc_dash extends AppCompatActivity {
 

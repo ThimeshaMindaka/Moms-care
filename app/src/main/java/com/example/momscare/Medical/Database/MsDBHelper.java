@@ -2,11 +2,10 @@ package com.example.momscare.Medical.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
-
-import androidx.annotation.Nullable;
 
 public class MsDBHelper extends SQLiteOpenHelper {
 
@@ -62,5 +61,50 @@ public class MsDBHelper extends SQLiteOpenHelper {
             Toast.makeText(context,  name + " Added successfully", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    //View -> To do list retrieve as list method
+    public Cursor readAllData() {
+        String query = "SELECT * FROM " + TABLE_NAME;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (db != null) {
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
+    }
+    //Delete All -> To do list delete all data from data base
+    public void deleteAllData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME);
+    }
+
+    //Update -> To do list update in data base method
+    public void updateData(String row_id, String name, String date,String time){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_NAME, name);
+        values.put(COLUMN_DATE, date);
+        values.put(COLUMN_TIME, time);
+
+
+        long result = db.update(TABLE_NAME, values, "_id=?", new String[]{row_id});
+        if(result == -1){
+            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(context, "Updated Successfully!", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+    //Delete One Row -> To do list delete one row from data base
+    public void deleteOneRow(String row_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        long result = db.delete(TABLE_NAME, "_id=?", new String[]{row_id});
+        if(result == -1){
+            Toast.makeText(context, "Failed to Delete.", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(context, "Successfully Deleted.", Toast.LENGTH_SHORT).show();
+        }
     }
 }
