@@ -65,6 +65,7 @@
         <activity
             android:name=".Medical.Doc_dash"
             />
+        <activity android:name=".Medical.Add_shchedule" />
 
 
         <!-- Start of Workout management -->

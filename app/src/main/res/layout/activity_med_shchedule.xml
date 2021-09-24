@@ -80,11 +80,11 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
 
-
     <Button
         android:id="@+id/btn2"
         android:layout_width="205dp"
         android:layout_height="50dp"
+        android:onClick="openAdd"
         android:text="@string/btn2"
         app:backgroundTint="#B484BC"
         app:layout_constraintBottom_toBottomOf="@+id/view"

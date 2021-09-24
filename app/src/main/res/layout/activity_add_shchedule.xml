@@ -69,6 +69,7 @@
         android:id="@+id/btn7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="saveSch"
         android:text="@string/btn7"
         app:backgroundTint="#B484BC"
         app:layout_constraintBottom_toBottomOf="parent"
