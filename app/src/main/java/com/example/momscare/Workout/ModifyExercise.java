@@ -71,7 +71,7 @@ public class ModifyExercise extends AppCompatActivity {
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(ModifyExercise.this);
         dialog.setCancelable(false);
-        dialog.setTitle("Get Fit App WorkOut Delete");
+        dialog.setTitle("MomsCare App WorkOut Delete");
         dialog.setMessage("Are you sure you want to delete "+ modifyExe_etv1.getText().toString() + " ? ");
         dialog.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
 
@@ -137,7 +137,7 @@ public class ModifyExercise extends AppCompatActivity {
 
                 AlertDialog.Builder dialog = new AlertDialog.Builder(ModifyExercise.this);
                 dialog.setCancelable(false);
-                dialog.setTitle("Get Fit App WorkOut Updating");
+                dialog.setTitle("Moms'care App WorkOut Updating");
                 dialog.setMessage("Are you sure you want to update "+modifyExe_etv1.getText().toString() + " ? " );
                 dialog.setPositiveButton("Update", new DialogInterface.OnClickListener() {
                     @Override

@@ -11,6 +11,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.momscare.Medical.MedicalShechedule;
+import com.example.momscare.Medical.Medical_info;
 import com.example.momscare.Nutrition.ViewMeals;
 import com.example.momscare.Nutrition.macroCal;
 import com.example.momscare.ToDo_List.To_Do_List;
@@ -72,6 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent nutritionNav = new Intent(MainActivity.this, ViewMeals.class);
                     startActivity(nutritionNav);
+                }
+
+                else if (id == R.id.suppleNav) {
+
+                    Intent suppleNav = new Intent(MainActivity.this, MedicalShechedule.class);
+                    startActivity(suppleNav);
                 }
                 if (id == R.id.woNav) {
 
