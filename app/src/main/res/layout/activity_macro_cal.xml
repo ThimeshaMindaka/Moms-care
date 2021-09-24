@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/me33"
+    tools:context=".Nutrition.macroCal">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="364dp"
+        android:layout_height="630dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numInServSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="serving size in cups"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txtMacroFoodName"
+        android:textColor="@color/gg"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtInFood"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/txtMacroName"
+        android:textColor="@color/gg"
+        android:textColorHint="@color/gg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/txtServingSize"
+        android:textColor="@color/gg"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInFood" />
+
+    <Button
+        android:id="@+id/btnFindMacro"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttons"
+        android:text="@string/btnFindMacro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numInServSize" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFindMacro">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtEnergy"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:text="@string/txtEnergy"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewEnergy"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewEnergy"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="kJ"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtFat"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="3dp"
+                android:text="@string/txtFat"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewFat"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewFat"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtCarbs"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtCarbs"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewCarbs"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewCarbs"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtFiber"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtFiber"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewFiber"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewFiber"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtProtein"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtProtein"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewProtein"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewProtein"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtSodium"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtSodium"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewSodium"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewSodium"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/txtCholesterol"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtCholesterol"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewCholesterol"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewCholesterol"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtPotasium"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewPotasium"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/txtViewPotasium"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gg"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="@string/textView6"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtViewCalories"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:text="g"
+                android:textAlignment="textEnd"
+                android:textColor="#FF0000"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="417dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/navigate_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:height="1dp"
+            android:backgroundTint="@color/purple_500"
+            android:drawableTop="@drawable/ic_baseline_fitness_center_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_nutrition"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_supplement"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_add_circle_24"
+            android:textSize="14sp"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

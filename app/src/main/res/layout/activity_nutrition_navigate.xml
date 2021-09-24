@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meabac1"
+    tools:context=".Nutrition.NutritionNavigate">
+
+
+    <Button
+        android:id="@+id/nutrition_button_viewMeals"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/btnViewMeal"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nutrition_button_updateMeals"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/update_meal_navigation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutrition_button_addMeals" />
+
+    <Button
+        android:id="@+id/nutrition_button_addMeals"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="sans-serif"
+        android:text="@string/btnAddMeal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutrition_button_viewMeals" />
+
+    <Button
+        android:id="@+id/nutrition_button_Macros"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/buttons"
+        android:fontFamily="sans-serif"
+        android:text="@string/macros_navigation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutrition_button_updateMeals" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="1080dp"
+        android:layout_height="1000dp"
+        android:foregroundTint="#000000"
+        android:foregroundTintMode="src_over"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
