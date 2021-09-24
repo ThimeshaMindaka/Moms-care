@@ -3,6 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/font/allerta_stencil.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/font/amaranth.xml" value="0.1" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/font/basic.xml" value="0.1" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_add_macros.xml" value="0.2" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_add_meal.xml" value="0.33" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_b_m_i.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_macro_cal.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_macros.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_macros_recycler.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_meal_list.xml" value="0.17" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_meals_recycler.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_nutrition_navigate.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_sign_in2.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_splash_screen.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_update_meal.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_user_meal_view.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_user_meals_recycler.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_view_meals.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_weight_converter.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_welcome_intaface.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/activity_work_outs.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/layout/wnavigation_header.xml" value="0.19739583333333333" />
         <entry key="..\:/private projects/Android Studio/MomsCare/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
       </map>
     </option>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta_stencil</item>
+        <item>@font/amaranth</item>
+        <item>@font/armata</item>
+        <item>@font/bangers</item>
+        <item>@font/basic</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/doppio_one</item>
+        <item>@font/kurale</item>
+        <item>@font/rammetto_one</item>
+        <item>@font/spicy_rice</item>
+    </array>
+</resources>
