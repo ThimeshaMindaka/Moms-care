@@ -162,8 +162,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="409dp"
-        android:layout_height="67dp"
+        android:layout_width="456dp"
+        android:layout_height="58dp"
         android:layout_marginTop="67dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -173,7 +173,7 @@
 
         <Button
             android:id="@+id/navigate_todo"
-            android:layout_width="122dp"
+            android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
@@ -183,7 +183,7 @@
 
         <Button
             android:id="@+id/navigate_workout"
-            android:layout_width="120dp"
+            android:layout_width="129dp"
             android:layout_height="66dp"
             android:layout_weight="1"
             android:backgroundTint="@color/ccc"
@@ -193,7 +193,7 @@
 
         <Button
             android:id="@+id/navigate_nutrition"
-            android:layout_width="wrap_content"
+            android:layout_width="108dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/ccc"
             android:drawableTop="@drawable/ic_baseline_fastfood_24"
@@ -202,8 +202,8 @@
 
         <Button
             android:id="@+id/navigate_supplement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:backgroundTint="@color/ccc"
             android:drawableTop="@drawable/ic_baseline_add_circle_24"
             app:cornerRadius="0dp"

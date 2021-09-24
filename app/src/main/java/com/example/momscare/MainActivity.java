@@ -11,13 +11,17 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+//import com.example.momscare.Nutrition.ViewMeals;
+//import com.example.momscare.Nutrition.macroCal;
+import com.example.momscare.ToDo_List.To_Do_List;
+import com.example.momscare.ToDo_List.UserProfile;
 import com.example.momscare.Workout.WeightConverter;
 import com.example.momscare.Workout.WorkOuts;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnWeightCon,  navigate_todo, navigate_workout, navigate_nutrition, navigate_supplement;
+    Button btnWeightCon, navigate_todo, navigate_workout, navigate_nutrition, navigate_supplement,btnMacroCal;
 
 
     //for the side nav bar
@@ -29,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //String username = getIntent().getStringExtra("username");
+        String username = getIntent().getStringExtra("username");
 
-
+        btnMacroCal = findViewById(R.id.btnMacroCal);
         btnWeightCon = findViewById(R.id.btnWeightCon);
 
 
@@ -53,6 +57,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
+
+                if(id == R.id.myProfile){
+
+                    Intent profile = new Intent(MainActivity.this, UserProfile.class);
+                    profile.putExtra("username",username);
+                    startActivity(profile);
+                }else if(id == R.id.toDoNav){
+
+                    Intent todoNav = new Intent(MainActivity.this, To_Do_List.class);
+                    startActivity(todoNav);
+                }
 
 
                 if (id == R.id.woNav) {
@@ -80,10 +95,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //redirects to macro finder page
+       /* btnMacroCal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, macroCal.class);
+                startActivity(intent);
+
+            }
+        });*/
 
 
         //redirects to workout
-      navigate_workout.setOnClickListener(new View.OnClickListener() {
+        navigate_workout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -92,6 +117,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //redirects to meal list
+        /*(navigate_nutrition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this,ViewMeals.class);
+                startActivity(intent);
+
+            }
+        });*/
 
 
     }
