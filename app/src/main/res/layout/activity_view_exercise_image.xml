@@ -8,7 +8,7 @@
     tools:context=".Workout.ViewExerciseImage">
 
     <TextView
-        android:id="@+id/wo_imageTitle"
+        android:id="@+id/medtext"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
