@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.momscare">
-
+    <!--Camera storage permisiions for image pick-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MomsCare"
-        android:largeHeap="true"
-        android:hardwareAccelerated="false">
-        <activity android:name=".Workout.WorkOuts"></activity>
-        <activity android:name=".Workout.WeightConverter" />
-        <activity android:name=".ToDo_List.SignUp" />
-        <activity android:name=".ToDo_List.SignIn" />
+        android:theme="@style/Theme.MomsCare">
+
         <activity android:name=".WelcomeIntaface" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -23,16 +22,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ToDo_List.SignIn"
+            android:label="Sign In">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ToDo_List.BMI"
+            android:label="BMI" />
+        <activity
+            android:name=".ToDo_List.SignUp"
+            android:label="Sign Up" />
         <!-- Start of ToDO List -->
-      <activity
-          android:name="com.example.momscare.MainActivity"
-          android:label="To Do List"
-          android:parentActivityName="com.example.momscare.ToDo_List.SignIn">
-      </activity>
-        <!-- Start of Work Out -->
+        <activity
+            android:name="com.example.momscare.ToDo_List.UpdateToDo"
+            android:parentActivityName="com.example.momscare.ToDo_List.To_Do_List" />
+
+        <activity
+            android:name="com.example.momscare.ToDo_List.Add_ToDo"
+            android:label="Add List"
+            android:parentActivityName="com.example.momscare.ToDo_List.To_Do_List" />
+        <activity
+            android:name="com.example.momscare.ToDo_List.To_Do_List"
+            android:label="To Do List"
+            android:parentActivityName="com.example.momscare.MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="Moms care"
+            android:parentActivityName=".ToDo_List.SignIn" />
+        <activity
+            android:name="com.example.momscare.ToDo_List.UserProfile"
+            android:label="User Profile"
+            android:parentActivityName="com.example.momscare.Workout.WorkOuts"/>
+        <activity
+            android:name=".Workout.WorkOuts"
+            android:label="WorkOut Packages" />
 
 
-
-  </application>
+    </application>
 
 </manifest>
