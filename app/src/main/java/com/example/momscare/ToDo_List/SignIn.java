@@ -12,11 +12,18 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.momscare.MainActivity;
+
 import com.example.momscare.Nutrition.NutritionNavigate;
 import com.example.momscare.R;
 import com.example.momscare.ToDo_List.Database.UserManagementDBHelper;
 //import com.example.momscare.ToDo_List.SignUp;
 //import com.example.momscare.Workout.WorkoutDashBoard;
+
+import com.example.momscare.R;
+import com.example.momscare.ToDo_List.Database.UserManagementDBHelper;
+import com.example.momscare.ToDo_List.SignUp;
+import com.example.momscare.Workout.WorkoutDashBoard;
+
 
 
 public class SignIn extends AppCompatActivity {
@@ -48,6 +55,7 @@ public class SignIn extends AppCompatActivity {
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
 
+
                 String work_username,work_password,nutrition_username,nutrition_password;
 
                 work_username = "achini";
@@ -55,11 +63,18 @@ public class SignIn extends AppCompatActivity {
                 nutrition_username = "thimesh";
                 nutrition_password = "123";
 
+                String work_username,work_password;
+
+                work_username = "achini";
+                work_password = "123";
+
+
                 if(user.equals("") || pass.equals("")){
                     Toast.makeText(SignIn.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                 }else{
                     Boolean checkuserPassword = userManagementDBHelper.checkpassword(user,pass);
                     if(checkuserPassword == true){
+
 
                         Toast.makeText(SignIn.this, "Login to the momscare", Toast.LENGTH_SHORT).show();
 
@@ -72,6 +87,16 @@ public class SignIn extends AppCompatActivity {
                             Intent intent = new Intent(getApplicationContext(), NutritionNavigate.class);
                             startActivity(intent);
                         }
+
+                        Toast.makeText(SignIn.this, "Login to the GET FIT", Toast.LENGTH_SHORT).show();
+
+                        if((user.equals(work_username) && (pass.equals(work_password) ))){
+                            Intent intent = new Intent(getApplicationContext(), WorkoutDashBoard.class);
+                            startActivity(intent);
+                        }
+
+
+
                         else{
                             Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                             intent.putExtra("username",user);

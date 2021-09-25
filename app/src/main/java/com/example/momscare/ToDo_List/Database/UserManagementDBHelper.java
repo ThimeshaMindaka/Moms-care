@@ -11,7 +11,7 @@ public class UserManagementDBHelper extends SQLiteOpenHelper {
     private Context context;
 
     private static final String DATABASE_NAME = "Moms.db";
-    private static final int DATABASE_VERSION =2;
+    private static final int DATABASE_VERSION = 2;
 
     //To do list data base
     private static final String TABLE_NAME = "TodoList";
@@ -49,27 +49,27 @@ public class UserManagementDBHelper extends SQLiteOpenHelper {
         //create To do list table
         String query = "CREATE TABLE " + TABLE_NAME +
                 " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-                       COLUMN_TITLE + " TEXT," +
-                       COLUMN_DESCRIPTION + " TEXT);";
+                COLUMN_TITLE + " TEXT," +
+                COLUMN_DESCRIPTION + " TEXT);";
         db.execSQL(query);
 
         //create user table
         String USER_QUERY = " CREATE TABLE " + TABLE_NAME_USER +
                 " (" + COLUMN_USERNAME + " TEXT PRIMARY KEY," +
-                       COLUMN_EMAIL + " TEXT," +
-                       COLUMN_PASSWORD + " TEXT," +
-                       COLUMN_GENDER + " TEXT," +
-                       COLUMN_HEIGHT + " FLOAT," +
-                       COLUMN_WEIGHT + " FLOAT," +
-                       COLUMN_AGE + " INTEGER);";
+                COLUMN_EMAIL + " TEXT," +
+                COLUMN_PASSWORD + " TEXT," +
+                COLUMN_GENDER + " TEXT," +
+                COLUMN_HEIGHT + " FLOAT," +
+                COLUMN_WEIGHT + " FLOAT," +
+                COLUMN_AGE + " INTEGER);";
 
-         db.execSQL(USER_QUERY);
+        db.execSQL(USER_QUERY);
 
 
-         //create upload image data base
+        //create upload image data base
         String queryImage = " CREATE TABLE " + TABLE_NAME_IMAGE +
                 " (" + COLUMN_USERNAMEIMAGE + " TEXT PRIMARY KEY," +
-                       COLUMN_IMAGE + " TEXT);";
+                COLUMN_IMAGE + " TEXT);";
         db.execSQL(queryImage);
 
     }
