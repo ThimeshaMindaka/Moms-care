@@ -94,7 +94,8 @@
                 android:layout_height="70dp"
                 android:backgroundTint="#E91E63"
                 android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
-                app:cornerRadius="0dp" />
+                app:cornerRadius="0dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
             <Button
@@ -104,7 +105,8 @@
                 android:height="1dp"
                 android:backgroundTint="#E91E63"
                 android:drawableTop="@drawable/ic_baseline_fitness_center_24"
-                app:cornerRadius="0dp" />
+                app:cornerRadius="0dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/navigate_nutrition"
@@ -113,7 +115,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#E91E63"
                 android:drawableTop="@drawable/ic_baseline_fastfood_24"
-                app:cornerRadius="0dp" />
+                app:cornerRadius="0dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/navigate_supplement"
@@ -122,7 +125,8 @@
                 android:backgroundTint="#E91E63"
                 android:drawableTop="@drawable/ic_baseline_add_circle_24"
                 android:textSize="14sp"
-                app:cornerRadius="0dp" />
+                app:cornerRadius="0dp"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
         </LinearLayout>
     </RelativeLayout>
 

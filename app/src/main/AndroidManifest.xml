@@ -23,6 +23,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Start of ToDO List -->
+
+        <activity
+            android:name=".ToDo_List.BMI"
+            android:label="BMI" />
+
+
+      <activity
+          android:name="com.example.momscare.MainActivity"
+          android:label="To Do List"
+          android:parentActivityName="com.example.momscare.ToDo_List.SignIn">
+      </activity>
+        <!-- Start of Work Out -->
+
         <activity
             android:name=".ToDo_List.SignIn"
             android:label="Sign In">
@@ -89,7 +104,46 @@
         <activity android:name=".Medical.Add_shchedule" />
 
 
+        <!--nuti-->
+        <!-- Start of Nutrition management -->
+        <activity android:name="com.example.momscare.Nutrition.NutritionNavigate" />
+        <activity
+            android:name="com.example.momscare.Nutrition.user_meal_view"
+            android:label="Meal Plan Details"
+            android:parentActivityName="com.example.momscare.Nutrition.ViewMeals"></activity>
+
+
+        <activity
+            android:name="com.example.momscare.Nutrition.macroCal"
+            android:label="Macro Finder"
+            android:parentActivityName="com.example.momscare.MainActivity" />
+        <activity
+            android:name="com.example.momscare.Nutrition.macros"
+            android:label="Added Macros"
+            android:parentActivityName="com.example.momscare.Nutrition.NutritionNavigate" />
+        <activity
+            android:name="com.example.momscare.Nutrition.AddMeal"
+            android:label="Add a Meal"
+            android:parentActivityName="com.example.momscare.Nutrition.NutritionNavigate" />
+        <activity
+            android:name="com.example.momscare.Nutrition.UpdateMeal"
+            android:label="Update a Meal"
+            android:parentActivityName="com.example.momscare.Nutrition.NutritionNavigate" />
+        <activity
+            android:name="com.example.momscare.Nutrition.AddMacros"
+            android:label="Add new Macro record"
+            android:parentActivityName="com.example.momscare.Nutrition.macros" />
+        <activity
+            android:name="com.example.momscare.Nutrition.MealList"
+            android:label="Added Meal Plans"
+            android:parentActivityName="com.example.momscare.Nutrition.NutritionNavigate" />
+        <activity
+            android:name="com.example.momscare.Nutrition.ViewMeals"
+            android:label="Meal Plans"
+            android:parentActivityName="com.example.momscare.MainActivity" />
+
         <!-- Start of Workout management -->
+
 
             android:label="WorkOut Packages" /> <!-- Start of Workout management -->
         <activity

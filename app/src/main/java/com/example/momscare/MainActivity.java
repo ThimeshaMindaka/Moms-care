@@ -12,6 +12,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 
+import com.example.momscare.Nutrition.ViewMeals;
+import com.example.momscare.Nutrition.macroCal;
+//import com.example.momscare.ToDo_List.To_Do_List;
+//import com.example.momscare.ToDo_List.UserProfile;
+
+
 import com.example.momscare.Medical.Medical_info;
 
 import com.example.momscare.Medical.MedicalShechedule;
@@ -20,6 +26,7 @@ import com.example.momscare.Nutrition.ViewMeals;
 import com.example.momscare.Nutrition.macroCal;
 import com.example.momscare.ToDo_List.To_Do_List;
 import com.example.momscare.ToDo_List.UserProfile;
+
 
 import com.example.momscare.Workout.WeightConverter;
 import com.example.momscare.Workout.WorkOuts;
@@ -64,7 +71,11 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
 
+
+               /* if(id == R.id.myProfile){
+
                 if(id == R.id.myProfile){
+
 
                     Intent profile = new Intent(MainActivity.this, UserProfile.class);
                     profile.putExtra("username",username);
@@ -73,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent todoNav = new Intent(MainActivity.this, To_Do_List.class);
                     startActivity(todoNav);
+
+                }*/
+                 if(id == R.id.nutritionNav){
+
+                    Intent nutritionNav = new Intent(MainActivity.this, ViewMeals.class);
+                    startActivity(nutritionNav);
+
                 }
                 else if(id == R.id.nutritionNav){
 
@@ -84,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent suppleNav = new Intent(MainActivity.this, MedicalShechedule.class);
                     startActivity(suppleNav);
+
                 }
                 if (id == R.id.woNav) {
 
@@ -129,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //redirects to workout
-      navigate_workout.setOnClickListener(new View.OnClickListener() {
+        navigate_workout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

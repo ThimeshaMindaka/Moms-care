@@ -155,8 +155,15 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:inputType=""
+
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtName"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
     <EditText
         android:id="@+id/SignUpEmail"
@@ -166,8 +173,15 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:inputType=""
+ 
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtEmail"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 
     <EditText
@@ -178,8 +192,15 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:inputType=""
+
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtGender"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtGender"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 
     <EditText
@@ -190,8 +211,15 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:inputType="textPassword"
+
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtPassword"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
     <EditText
         android:id="@+id/SignUpHeight"
@@ -202,6 +230,10 @@
         android:ems="10"
         android:hint="cm"
         android:inputType="number|numberDecimal"
+
+        android:minHeight="48dp"
+
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtHeight"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -214,6 +246,10 @@
         android:ems="10"
         android:hint="Kg"
         android:inputType="number|numberDecimal"
+
+        android:minHeight="48dp"
+
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtWeight"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -225,20 +261,37 @@
         android:background="@drawable/edittext"
         android:ems="10"
         android:inputType="number"
+
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
         app:layout_constraintBaseline_toBaselineOf="@+id/SignUptxtAge"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
     <Button
         android:id="@+id/SignUpbtnSignUp"
         android:layout_width="368dp"
+
+        android:layout_height="48dp"
+
         android:layout_height="42dp"
+
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="5dp"
+
+        android:background="@drawable/buttons"
+        android:text="@string/SignUpbtnSignUp"
+        android:textSize="16sp"
+
         android:text="@string/SignUpbtnSignUp"
         android:textSize="16sp"
         android:background="@drawable/buttons"
+
         app:layout_constraintBottom_toTopOf="@+id/SignInbtnSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
@@ -248,6 +301,15 @@
     <Button
         android:id="@+id/SignInbtnSignIn"
         android:layout_width="368dp"
+
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/buttons"
+        android:text="@string/SignUpbtnSignIn"
+        android:textSize="16sp"
+
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -255,6 +317,7 @@
         android:text="@string/SignUpbtnSignIn"
         android:textSize="16sp"
         android:background="@drawable/buttons"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"

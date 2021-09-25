@@ -26,7 +26,11 @@ public class WelcomeIntaface extends AppCompatActivity {
         startActivity(log);
     }
     public void Login(View view){
+
+        Intent reg = new Intent(WelcomeIntaface.this,SignIn.class);
+
         Intent reg = new Intent(WelcomeIntaface.this, SignIn.class);
+
         startActivity(reg);
     }
 }
