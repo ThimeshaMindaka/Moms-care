@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac5"
+    tools:context=".Workout.ModifyExercise">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="365dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/modifyExe_tv2"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/WorkOutId"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/modifyExe_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addExe_tv2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="102dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/WorkOutName"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/modifyExe_tv4"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addExe_tv3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="159dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/WorkOutPackageType"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/modifyExe_tv5"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addExe_tv6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="214dp"
+            android:layout_marginBottom="265dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/WorkOutCalorieBurnt"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/modifyExe_tv6"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addExe_tv4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="265dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/WorkOutDuration"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/modifyExe_tv7"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="152dp"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/WorkOutsteps"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/modifyExe_etv1"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="85dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/modifyExe_etn1"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:fontFamily="@font/rammetto_one"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/modifyExe_packageType"
+            android:layout_width="199dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="148dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/modifyExe_etn2"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="253dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <EditText
+            android:id="@+id/modifyExe_etn3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="198dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3" />
+
+        <EditText
+            android:id="@+id/modifyExe_emt1"
+            android:layout_width="198dp"
+            android:layout_height="171dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/modifyExe_tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="209dp"
+            android:text="@string/WorkOutminutes"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/modifyExe_btn4"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="253dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttons2"
+            android:backgroundTint="#0621AE"
+            android:onClick="goToViewImage"
+            android:text="@string/WorkOutGetImagebtn" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/modifyExe_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/ModifyExercise"
+        android:textColor="@color/ccc"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <Button
+        android:id="@+id/modifyExe_btn1"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttons2"
+        android:onClick="deleteWorkOutData"
+        android:text="@string/Workoutdeletebtn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/modifyExe_btn2"
+        app:layout_constraintEnd_toStartOf="@+id/modifyExe_btn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/modifyExe_btn3" />
+
+    <Button
+        android:id="@+id/modifyExe_btn2"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttons2"
+        android:onClick="updateWorkOutData"
+        android:text="@string/WorkOutupdatebtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/modifyExe_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/modifyExe_btn3"
+        android:layout_width="108dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/buttons2"
+        android:onClick="resetFields"
+        android:text="@string/WorkOutShowbtn"
+        app:layout_constraintBaseline_toBaselineOf="@+id/modifyExe_btn1"
+        app:layout_constraintEnd_toStartOf="@+id/modifyExe_btn1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="652dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cyculer" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="324dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cyculer" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="116dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginBottom="668dp"
+        android:rotationX="-145"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cyculer" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="85dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="668dp"
+        android:layout_marginEnd="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cycular2" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="72dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginBottom="288dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cycular2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

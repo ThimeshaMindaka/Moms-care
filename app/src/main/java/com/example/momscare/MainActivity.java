@@ -11,10 +11,29 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+ 
 //import com.example.momscare.Nutrition.ViewMeals;
 //import com.example.momscare.Nutrition.macroCal;
 import com.example.momscare.ToDo_List.To_Do_List;
 import com.example.momscare.ToDo_List.UserProfile;
+
+
+import com.example.momscare.Nutrition.ViewMeals;
+import com.example.momscare.Nutrition.macroCal;
+//import com.example.momscare.ToDo_List.To_Do_List;
+//import com.example.momscare.ToDo_List.UserProfile;
+
+
+import com.example.momscare.Medical.Medical_info;
+
+import com.example.momscare.Medical.MedicalShechedule;
+import com.example.momscare.Medical.Medical_info;
+import com.example.momscare.Nutrition.ViewMeals;
+import com.example.momscare.Nutrition.macroCal;
+import com.example.momscare.ToDo_List.To_Do_List;
+import com.example.momscare.ToDo_List.UserProfile;
+
+ 
 import com.example.momscare.Workout.WeightConverter;
 import com.example.momscare.Workout.WorkOuts;
 import com.google.android.material.navigation.NavigationView;
@@ -70,10 +89,48 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+               /* if(id == R.id.myProfile){
+
+                if(id == R.id.myProfile){
+
+
+                    Intent profile = new Intent(MainActivity.this, UserProfile.class);
+                    profile.putExtra("username",username);
+                    startActivity(profile);
+                }else if(id == R.id.toDoNav){
+
+                    Intent todoNav = new Intent(MainActivity.this, To_Do_List.class);
+                    startActivity(todoNav);
+
+                }*/
+                 if(id == R.id.nutritionNav){
+
+                    Intent nutritionNav = new Intent(MainActivity.this, ViewMeals.class);
+                    startActivity(nutritionNav);
+
+                }
+                else if(id == R.id.nutritionNav){
+
+                    Intent nutritionNav = new Intent(MainActivity.this, ViewMeals.class);
+                    startActivity(nutritionNav);
+                }
+
+                else if (id == R.id.suppleNav) {
+
+                    Intent suppleNav = new Intent(MainActivity.this, MedicalShechedule.class);
+                    startActivity(suppleNav);
+
+                }
                 if (id == R.id.woNav) {
 
                     Intent woNav = new Intent(MainActivity.this, WorkOuts.class);
                     startActivity(woNav);
+                }
+
+                else if (id == R.id.suppleNav) {
+
+                    Intent suppleNav = new Intent(MainActivity.this, Medical_info.class);
+                    startActivity(suppleNav);
                 }
 
                 return true;
@@ -96,7 +153,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //redirects to macro finder page
+ 
        /* btnMacroCal.setOnClickListener(new View.OnClickListener() {
+
+        btnMacroCal.setOnClickListener(new View.OnClickListener() {
+ 
             @Override
             public void onClick(View v) {
 
@@ -104,7 +165,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }
+ 
         });*/
+
+        });
+ 
 
 
         //redirects to workout
@@ -118,7 +183,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //redirects to meal list
+ 
         /*(navigate_nutrition.setOnClickListener(new View.OnClickListener() {
+
+        navigate_nutrition.setOnClickListener(new View.OnClickListener() {
+ 
             @Override
             public void onClick(View v) {
 
@@ -126,7 +195,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }
+ 
         });*/
+
+        });
+ 
 
 
     }

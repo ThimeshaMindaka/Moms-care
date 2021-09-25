@@ -114,6 +114,18 @@
     <string name="pernatal_frgmnt_tv1">Prenatal Body Coaching</string>
 
 
+ 
+
+ 
+
+    <!-- -->
+
+
+  <!-- Medical: Remove or change this placeholder text -->
+
+
+ 
+ 
     <string name="nutrition_navigation">Navigation Menu</string>
     <string name="btnAddMeal">Add a Meal Plan</string>
     <string name="btnMacros">Macros</string>
@@ -159,5 +171,99 @@
 
     <string name="um_bm02">Meal Name</string>
     <string name="um_lm01">Meal Name</string>
+ 
+
+ 
+    <string name="SignUpHeight">cm</string>
+
+
+
+    <!-- Medical: Remove or change this placeholder text -->
+
+    <string name="txt8">Medical Shchedule </string>
+    <string name="btn2">Add New Schedule</string>
+    <string name="txt9">Name :</string>
+    <string name="txt10">Clinic Day</string>
+    <string name="txt11">Date :</string>
+    <string name="date1">08-22-2021</string>
+    <string name="txt12">Status :</string>
+    <string name="btn3">Done</string>
+    <string name="txt13">Time :</string>
+    <string name="time1">10.30 AM</string>
+    <string name="btn4">UPDATE</string>
+    <string name="txt14">Name :</string>
+    <string name="txt15">Date :</string>
+    <string name="txt16">Time :</string>
+    <string name="txt17">Status :</string>
+    <string name="txt18">Doctor Channeling</string>
+    <string name="txt19">09-12-2021</string>
+    <string name="txt20">4.00 PM</string>
+    <string name="btn5">Done</string>
+    <string name="btn6">update</string>
+    <string name="txt21">Due Date Calculator</string>
+    <string name="txt22">Congratulations!</string>
+    <string name="txt23">Your Due Date Is :</string>
+    <string name="txt24" />
+    <string name="txt25">Add New Schedule</string>
+    <string name="txt26">Your Schedule</string>
+    <string name="txt27">Schedule Name :</string>
+    <string name="txt28">Schedule Date :</string>
+    <string name="txt29">Schedule Time :</string>
+    <string name="txt30" />
+    <string name="txt31" />
+    <string name="txt32" />
+    <string name="btn7">Add Schedule</string>
+    <string name="txt33">Update Schedule</string>
+    <string name="txt34">Schedule Name :</string>
+    <string name="txt35">Schedule Date :</string>
+    <string name="txt36">Schedule Time :</string>
+    <string name="txt37">Clinic Day</string>
+    <string name="txt38">08-22-2021</string>
+    <string name="txt39">10.30 AM</string>
+    <string name="txt40">Schedule Name :</string>
+    <string name="txt41">Schedule Date :</string>
+    <string name="txt42">Schedule Time :</string>
+    <string name="btn8">UPDATE</string>
+    <string name="txt43" />
+    <string name="txt44" />
+    <string name="txt45" />
+    <string name="txt46">Due Date Calculator</string>
+    <string name="txt47">Calculation Method :</string>
+    <string name="txt48">Last Period</string>
+    <string name="txt49"> Month Of Your Last Period :</string>
+    <string name="txt50" />
+    <string name="btn9">Calculate</string>
+    <string name="txt51">Calculate Your Due Date</string>
+    <string name="btn10">Add Commom Problems</string>
+    <string name="btn11">View And Update Problems</string>
+    <string name="txt52">Doctor Dashboard</string>
+    <string name="btn12">Add Your Register No:  And E-Mail</string>
+    <string name="btn13">Remove My Account</string>
+    <string name="txt53">View Doctors</string>
+    <string name="txt54">Doctor Name :</string>
+    <string name="txt55">Register No :</string>
+    <string name="txt56">Mobile :</string>
+    <string name="txt57">Doctor Name :</string>
+    <string name="txt58">Register No :</string>
+    <string name="txt59">Mobile :</string>
+    <string name="txt60">Doctor Name :</string>
+    <string name="txt62">Register No :</string>
+    <string name="txt63">Mobile :</string>
+    <string name="txt64">Medical Information</string>
+    <string name="btn14">Know Your Due Date</string>
+    <string name="btn15">Common Problems</string>
+    <string name="btn16">Medical Schedule</string>
+    <string name="btn17">View Doctors</string>
+    <string name="txt00" />
+    <string name="txt002">Month(Number only):</string>
+    <string name="txt001">Year :</string>
+    <string name="txt003">Last Period</string>
+    <string name="txt004" />
+    <string name="medtext">Medical Schedule</string>
+    <string name="btndelete">DELETE</string>
+
+
+ 
+ 
 
 </resources>

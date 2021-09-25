@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Medical.Medical_info">
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="624dp"
+        android:layout_height="861dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/medic" />
+
+
+    <Button
+        android:id="@+id/btn14"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/purple_700"
+        android:onClick="openduedate_cal"
+        android:text="@string/btn14"
+        android:textColor="@color/black"
+        app:backgroundTint="#D8B3758A"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView63"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <Button
+        android:id="@+id/btn16"
+        android:layout_width="318dp"
+        android:layout_height="123dp"
+        android:background="@drawable/buttons"
+        android:onClick="openMS"
+        android:text="@string/btn16"
+        android:textColor="@color/black"
+        app:backgroundTint="#D8B3758A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/btn17"
+        android:layout_width="318dp"
+        android:layout_height="124dp"
+        android:background="@drawable/buttons"
+        android:onClick="viewDoc"
+        android:text="@string/btn17"
+        android:textColor="@color/black"
+        app:backgroundTint="#D8B3758A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="417dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/navigate_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_format_list_numbered_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:height="1dp"
+            android:backgroundTint="@color/ccc"
+            android:drawableTop="@drawable/ic_baseline_fitness_center_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_nutrition"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_fastfood_24"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/navigate_supplement"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:backgroundTint="#E91E63"
+            android:drawableTop="@drawable/ic_baseline_add_circle_24"
+            android:textSize="14sp"
+            app:cornerRadius="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac4"
+    tools:context=".Workout.ImageUpload">
+
+    <TextView
+        android:id="@+id/wo_ImgUploadTv1"
+        android:layout_width="291dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="178dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/ImageUploadTv"
+        android:textColor="@color/ccc"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wo_ImgUploadTv2"
+        android:layout_width="109dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/WorkOutId"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wo_ImgUploadTv1" />
+
+    <EditText
+        android:id="@+id/wo_ImageUploadEtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/wo_ImgUploadTv2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/wo_image"
+        android:layout_width="281dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="170dp"
+        android:onClick="chooseImage"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wo_ImageUploadEtn1"
+        app:layout_constraintVertical_bias="0.425"
+        app:srcCompat="@drawable/ic_baseline_image_search_24"></ImageView>
+
+    <Button
+        android:id="@+id/wo_ImageUpload"
+        android:layout_width="287dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="93dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="storeImage"
+        android:text="@string/wo_ImgUploadSaveBtn"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wo_image"
+        app:layout_constraintVertical_bias="0.796"></Button>
+
+    <Button
+        android:id="@+id/wo_ImageDelete"
+        android:layout_width="287dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="deleteImage"
+        android:text="@string/wo_ImgUploadDltBtn"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wo_ImageUpload"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
