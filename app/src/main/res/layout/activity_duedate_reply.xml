@@ -6,30 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".Medical.Duedate_rep">
 
+
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="501dp"
+        android:layout_height="733dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bac4" />
-
 
     <TextView
         android:id="@+id/txt22"
-        android:layout_width="321dp"
-        android:layout_height="53dp"
+        android:layout_width="329dp"
+        android:layout_height="72dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="64dp"
         android:gravity="center"
         android:text="@string/txt22"
-        android:textSize="30sp"
+        android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/txt23"
@@ -37,27 +36,25 @@
         android:layout_height="47dp"
         android:gravity="center"
         android:text="@string/txt23"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
-
+        app:layout_constraintVertical_bias="0.255" />
 
     <TextView
         android:id="@+id/txt24"
         android:layout_width="166dp"
         android:layout_height="50dp"
+        android:layout_marginTop="4dp"
         android:text="@string/txt24"
+
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintTop_toBottomOf="@+id/txt004" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -103,22 +100,32 @@
             android:id="@+id/navigate_supplement"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#F35ED2"
             android:drawableTop="@drawable/ic_baseline_add_circle_24"
-            android:textSize="14sp"
+
             app:cornerRadius="0dp"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/txt004"
-        android:layout_width="156dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="224dp"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="168dp"
         android:text="@string/txt004"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView17"
         app:layout_constraintTop_toBottomOf="@+id/txt23" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="237dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt24"
+        app:srcCompat="@drawable/bby3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

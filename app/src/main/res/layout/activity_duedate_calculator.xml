@@ -8,19 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView33"
-        android:layout_width="1080dp"
-        android:layout_height="wrap_content"
+        android:layout_width="457dp"
+        android:layout_height="746dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bac4" />
-
-
-
-
-
 
 
     <TextView
@@ -32,10 +27,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView33"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
         android:id="@+id/txt49"
@@ -48,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <EditText
         android:id="@+id/txt50"
@@ -58,12 +52,10 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:text="@string/txt50"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt001"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577"
         tools:ignore="SpeakableTextPresentCheck" />
 
 
@@ -93,7 +85,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.824" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <TextView
         android:id="@+id/txt51"
@@ -108,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView33"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.086" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -154,7 +146,7 @@
             android:id="@+id/navigate_supplement"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#F669BF"
             android:drawableTop="@drawable/ic_baseline_add_circle_24"
             android:textSize="14sp"
             app:cornerRadius="0dp"
@@ -190,7 +182,7 @@
         android:id="@+id/txt002"
         android:layout_width="159dp"
         android:layout_height="72dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="4dp"
         android:text="@string/txt002"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/txt00"
@@ -200,8 +192,8 @@
         android:id="@+id/txt003"
         android:layout_width="172dp"
         android:layout_height="54dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="104dp"
         android:text="@string/txt003"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

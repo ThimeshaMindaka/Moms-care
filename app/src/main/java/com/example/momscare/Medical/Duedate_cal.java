@@ -44,8 +44,46 @@ public class Duedate_cal extends AppCompatActivity {
             month2 = "November";
 
 
-        } else if (month == 4) {
+        }
+         else if (month == 3) {
+        month2 = "December";
+
+
+        }
+         else if (month == 4) {
             month2 = "January";
+            year++;
+        }
+        else if (month == 5) {
+            month2 = "February";
+            year++;
+        }
+        else if (month == 6) {
+            month2 = "March";
+            year++;
+        }
+        else if (month == 7) {
+            month2 = "April";
+            year++;
+        }
+        else if (month == 8) {
+            month2 = "May";
+            year++;
+        }
+        else if (month == 9) {
+            month2 = "June";
+            year++;
+        }
+        else if (month == 10) {
+            month2 = "July";
+            year++;
+        }
+        else if (month == 11) {
+            month2 = "August";
+            year++;
+        }
+        else if (month == 12) {
+            month2 = "September";
             year++;
         }
 

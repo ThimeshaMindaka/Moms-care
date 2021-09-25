@@ -60,7 +60,7 @@ public class Update_shchedule extends AppCompatActivity {
             ab.setTitle(name);
         }
 
-        //update list
+        //update Schedule
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,20 +113,6 @@ public class Update_shchedule extends AppCompatActivity {
             }
         });
 
-
-
-      /*  //redirects to supplement list
-        navigate_supplement.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(UpdateToDo.this, ViewSupplement.class);
-                startActivity(intent);
-
-            }
-        });
-*/
-
     }
 
     void getAndSetIntentData(){
@@ -150,6 +136,7 @@ public class Update_shchedule extends AppCompatActivity {
         }
     }
 
+    // delete one Schedule
     void confirmDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete " + name + " ?");

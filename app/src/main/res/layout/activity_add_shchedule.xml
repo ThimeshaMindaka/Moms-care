@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Medical.Add_shchedule">
 
+
     <ImageView
         android:id="@+id/imageView72"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="462dp"
+        android:layout_height="776dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bac4" />
-
+        app:srcCompat="@drawable/iii" />
 
     <TextView
         android:id="@+id/txt26"
@@ -69,9 +72,10 @@
         android:id="@+id/btn7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:onClick="saveSch"
         android:text="@string/btn7"
-        app:backgroundTint="#B484BC"
+        app:backgroundTint="#6C157A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.479"
@@ -176,7 +180,7 @@
             android:id="@+id/navigate_supplement"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#EA5ADC"
             android:drawableTop="@drawable/ic_baseline_add_circle_24"
             android:textSize="14sp"
             app:cornerRadius="0dp"

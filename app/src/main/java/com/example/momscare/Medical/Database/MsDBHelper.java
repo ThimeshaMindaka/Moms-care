@@ -63,7 +63,7 @@ public class MsDBHelper extends SQLiteOpenHelper {
 
     }
 
-    //View -> To do list retrieve as list method
+    //View -> Medical Schedule retrieve as list method
     public Cursor readAllData() {
         String query = "SELECT * FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getReadableDatabase();
@@ -74,13 +74,9 @@ public class MsDBHelper extends SQLiteOpenHelper {
         }
         return cursor;
     }
-    //Delete All -> To do list delete all data from data base
-    public void deleteAllData(){
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DELETE FROM " + TABLE_NAME);
-    }
 
-    //Update -> To do list update in data base method
+
+    //Update -> Medical Schedule update in data base method
     public void updateData(String row_id, String name, String date,String time){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -97,7 +93,14 @@ public class MsDBHelper extends SQLiteOpenHelper {
         }
 
     }
-    //Delete One Row -> To do list delete one row from data base
+
+    //Delete All -> Medical Shedule delete all data from data base
+    public void deleteAllData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_NAME);
+    }
+
+    //Delete One Row -> Medical Schedule delete one row from data base
     public void deleteOneRow(String row_id){
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(TABLE_NAME, "_id=?", new String[]{row_id});
