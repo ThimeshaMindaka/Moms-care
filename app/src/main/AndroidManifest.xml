@@ -59,6 +59,38 @@
             android:parentActivityName=".Workout.WorkOuts" />
         <activity
             android:name=".Workout.WorkOuts"
+
+            android:label="WorkOut Packages" />
+
+        <!-- Start of Medical -->
+        <activity
+            android:name=".Medical.View_doc"
+            />
+        <activity
+            android:name=".Medical.Update_shchedule"
+            />
+        <activity
+            android:name=".Medical.MedicalShechedule"
+            />
+        <activity
+            android:name=".Medical.Medical_info"
+            android:label="Medical Information"
+            />
+        <activity
+            android:name=".Medical.Duedate_rep"
+            />
+        <activity
+            android:name=".Medical.Duedate_cal"
+            android:label="Due Date Calculator"
+            />
+        <activity
+            android:name=".Medical.Doc_dash"
+            />
+        <activity android:name=".Medical.Add_shchedule" />
+
+
+        <!-- Start of Workout management -->
+
             android:label="WorkOut Packages" /> <!-- Start of Workout management -->
         <activity
             android:name=".Workout.ViewExerciseImage"

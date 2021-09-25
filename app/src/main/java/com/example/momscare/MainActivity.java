@@ -11,12 +11,16 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+
+import com.example.momscare.Medical.Medical_info;
+
 import com.example.momscare.Medical.MedicalShechedule;
 import com.example.momscare.Medical.Medical_info;
 import com.example.momscare.Nutrition.ViewMeals;
 import com.example.momscare.Nutrition.macroCal;
 import com.example.momscare.ToDo_List.To_Do_List;
 import com.example.momscare.ToDo_List.UserProfile;
+
 import com.example.momscare.Workout.WeightConverter;
 import com.example.momscare.Workout.WorkOuts;
 import com.google.android.material.navigation.NavigationView;
@@ -85,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent woNav = new Intent(MainActivity.this, WorkOuts.class);
                     startActivity(woNav);
+                }
+
+                else if (id == R.id.suppleNav) {
+
+                    Intent suppleNav = new Intent(MainActivity.this, Medical_info.class);
+                    startActivity(suppleNav);
                 }
 
                 return true;

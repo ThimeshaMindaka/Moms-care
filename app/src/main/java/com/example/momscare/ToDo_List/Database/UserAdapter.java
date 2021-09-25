@@ -1,4 +1,4 @@
-package com.example.momscare.ToDo_List.Database;
+/*package com.example.momscare.ToDo_List.Database;
 
 import android.app.Activity;
 import android.content.Context;
@@ -68,4 +68,4 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
         }
     }
 }
-
+*/
