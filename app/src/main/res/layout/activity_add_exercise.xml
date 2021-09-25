@@ -309,9 +309,12 @@
         android:id="@+id/imageView28"
         android:layout_width="72dp"
         android:layout_height="79dp"
+        android:layout_marginStart="376dp"
         android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
-        app:srcCompat="@drawable/cycular2"
-        tools:layout_editor_absoluteX="368dp" />
+        app:layout_constraintVertical_bias="0.068"
+        app:srcCompat="@drawable/cycular2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
