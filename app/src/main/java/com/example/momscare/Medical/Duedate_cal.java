@@ -28,7 +28,7 @@ public class Duedate_cal extends AppCompatActivity {
 
 
     }
-
+// calculator
     public void calculate(View view) {
         String year1 = txt50.getText().toString();
         String month1 = txt00.getText().toString();
