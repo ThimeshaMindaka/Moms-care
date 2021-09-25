@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink"
+    android:textAlignment="center"
+    tools:context=".Workout.PostpartumBodyCoachingFragment">
+
+    <TextView
+        android:id="@+id/pernatal_frgmnt_tv1"
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Postpartum Body Coaching"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/postpartum_fragment_tv2"
+        android:layout_width="406dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:scrollbarThumbHorizontal="@color/cardview_dark_background"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/fatLossListView"
+        android:layout_width="299dp"
+        android:layout_height="415dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="184dp"
+        android:textAlignment="center"
+        android:textDirection="firstStrongLtr"
+        android:theme="@style/TextAppearance.AppCompat.Button" />
+
+</RelativeLayout>

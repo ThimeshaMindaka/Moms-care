@@ -5,7 +5,7 @@
     android:id="@+id/dl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bac4"
+    android:background="@drawable/time"
     android:orientation="vertical">
 
 
@@ -17,15 +17,9 @@
         tools:context=".Nutrition.MainActivity">
 
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="422dp"
-            android:layout_height="139dp"
-            app:srcCompat="@drawable/cal3" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="658dp"
+            android:layout_height="578dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="0dp"
@@ -35,13 +29,12 @@
 
             <Button
                 android:id="@+id/btnBMICal"
-                android:layout_width="328dp"
-                android:layout_height="60dp"
+                android:layout_width="311dp"
+                android:layout_height="58dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="150dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/buttons"
-                android:backgroundTint="@color/ccc"
+                android:background="@drawable/buttons2"
                 android:text="@string/btnBMICal" />
 
             <Button
@@ -51,11 +44,12 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="64dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/buttons"
+                android:background="@drawable/buttons2"
                 android:backgroundTint="@color/ccc"
                 android:text="@string/btnWeightCon" />
 
             <Button
+                android:id="@+id/btnMacroCal"
                 android:layout_width="328dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="32dp"
@@ -67,6 +61,7 @@
 
             <Button
                 android:id="@+id/btnDuedate"
+
                 android:layout_width="328dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="32dp"
@@ -75,6 +70,12 @@
                 android:background="@drawable/buttons"
                 android:backgroundTint="@color/ccc"
                 android:text="@string/btnDuedate" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ex2" />
 
 
         </LinearLayout>
@@ -107,7 +108,7 @@
 
             <Button
                 android:id="@+id/navigate_nutrition"
-                android:layout_width="109dp"
+                android:layout_width="100dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
                 android:backgroundTint="#E91E63"
@@ -130,7 +131,7 @@
         android:layout_width="225dp"
         android:layout_height="match_parent"
         android:layout_gravity="left"
-        android:background="#BE03A9F4"
+        android:background="#BEF1F1F1"
         app:headerLayout="@layout/wnavigation_header"
         app:menu="@menu/wnavigation_menu">
 

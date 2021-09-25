@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pe"
+    tools:context=".Workout.PrenatalBodyCoachingFragment">
+
+    <TextView
+        android:id="@+id/pernatal_frgmnt_tv1"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/pernatal_frgmnt_tv1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/postpartum_fragment_tv2"
+        android:layout_width="372dp"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="69dp"
+        android:textAlignment="center"
+        android:textColor="@color/gg"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/fatLossListView"
+        android:layout_width="356dp"
+        android:layout_height="508dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="147dp"
+        android:textAlignment="center"
+        android:textDirection="ltr" />
+
+</RelativeLayout>

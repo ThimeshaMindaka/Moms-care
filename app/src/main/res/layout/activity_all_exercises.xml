@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/exersizw3"
+    tools:context=".Workout.AllExercises">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lworkouts"
+        android:layout_width="304dp"
+        android:layout_height="403dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="136dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/allExe_tv1"
+        android:layout_width="314dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/bangers"
+        android:text="@string/woAllWorkOuts"
+        android:textAlignment="center"
+        android:textColor="@color/ccc"
+        android:textSize="36sp"
+        android:textStyle="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addWO_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="555dp"
+        android:clickable="true"
+        app:backgroundTint="@color/ccc"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>

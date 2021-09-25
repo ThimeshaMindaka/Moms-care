@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imgView"
         android:layout_width="298dp"
-        android:layout_height="395dp"
+        android:layout_height="471dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,16 +17,16 @@
 
     <ProgressBar
         android:id="@+id/splash_prog"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="96dp"
-        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_width="63dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="@color/ccc"
         android:indeterminate="true"
-        android:indeterminateTint="@color/cardview_dark_background"
+        android:indeterminateTint="@color/ccc"
         android:indeterminateTintMode="src_atop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:targetApi="lollipop"></ProgressBar>
 
