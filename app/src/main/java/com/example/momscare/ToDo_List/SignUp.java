@@ -8,6 +8,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+ 
+import com.example.momscare.R;
+import com.example.momscare.ToDo_List.Database.UserManagementDBHelper;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +23,7 @@ import com.example.momscare.ToDo_List.SignIn;
 
 
 
+ 
 
 public class SignUp extends AppCompatActivity {
 
@@ -28,18 +33,24 @@ public class SignUp extends AppCompatActivity {
 
     UserManagementDBHelper userManagementDBHelper;
 
+ 
+
 
     UserManagementDBHelper userManagementDBHelper;
 
 
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+ 
 
 
 
+
+ 
         username = findViewById(R.id.SignUpName);
         email = findViewById(R.id.SignUpEmail);
         password = findViewById(R.id.SignUpPassword);
@@ -52,12 +63,15 @@ public class SignUp extends AppCompatActivity {
         Button SignUpbtnSignUp  = (Button)findViewById(R.id.SignUpbtnSignUp);
         userManagementDBHelper = new UserManagementDBHelper(this);
 
+ 
+
 
         SignInbtnSignIn = findViewById(R.id.SignInbtnSignIn);
         Button SignUpbtnSignUp  = (Button)findViewById(R.id.SignUpbtnSignUp);
         userManagementDBHelper = new UserManagementDBHelper(this);
 
 
+ 
         SignUpbtnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,9 +81,12 @@ public class SignUp extends AppCompatActivity {
                 String pass = password.getText().toString();
                 String gen = gender.getText().toString();
 
+ 
 
 
 
+
+ 
                 if(user.equals("") || ema.equals("") || pass.equals("") || gen.equals("")){
                     username.requestFocus();
                     username.setError("Field cannot be empty");
@@ -86,9 +103,12 @@ public class SignUp extends AppCompatActivity {
                     age.requestFocus();
                     age.setError("Field cannot be empty");
 
+ 
 
 
 
+
+ 
                 }else{
                     if(pass.equals((pass))){
                         Boolean checkuser = userManagementDBHelper.checkusername(user);
@@ -100,18 +120,24 @@ public class SignUp extends AppCompatActivity {
                             if(insert == true){
                                 Toast.makeText(SignUp.this, "Welcome to the GET FIT", Toast.LENGTH_SHORT).show();
 
+ 
 
 
 
+
+ 
                                 Intent intent = new Intent(getApplicationContext(), BMI.class);
                                 intent.putExtra("height",height.getText().toString());
                                 intent.putExtra("weight",weight.getText().toString());
                                 intent.putExtra("age",age.getText().toString());
                                 intent.putExtra("username",user);
 
+ 
 
 
 
+
+ 
                                 startActivity(intent);
                             }else{
 
@@ -127,9 +153,12 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
+ 
 
 
 
+
+ 
         SignInbtnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -140,11 +169,14 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
+ 
+
 
                 startActivity(intent);
             }
         });
 
 
+ 
     }
 }

@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+ 
+        <entry key="..\:/android project/Moms-care/app/src/main/res/font/amaranth.xml" value="0.284375" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/font/basic.xml" value="0.16041666666666668" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_add__to_do.xml" value="0.2" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_b_m_i.xml" value="0.4" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_sign_in2.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_splash_screen.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_to__do__list.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_update_to_do.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_user_profile.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_weight_converter.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_welcome_intaface.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/activity_work_outs.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/my_row.xml" value="0.13020833333333334" />
+        <entry key="..\:/android project/Moms-care/app/src/main/res/layout/wnavigation_header.xml" value="0.13020833333333334" />
+
 
         <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/font/allerta_stencil.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/THIMASHA/Desktop/MAD project/my/Moms-care/app/src/main/res/font/amaranth.xml" value="0.1" />
@@ -46,6 +64,7 @@
         <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/layout/activity_view_doctor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/Android Prac/Moms-care/app/src/main/res/menu/wnavigation_menu.xml" value="0.25416666666666665" />
 
+ 
         <entry key="..\:/private projects/Android Studio/MomsCare/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
       </map>
     </option>

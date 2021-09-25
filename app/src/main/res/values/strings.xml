@@ -116,12 +116,15 @@
 
  
 
+ 
+
     <!-- -->
 
 
   <!-- Medical: Remove or change this placeholder text -->
 
 
+ 
  
     <string name="nutrition_navigation">Navigation Menu</string>
     <string name="btnAddMeal">Add a Meal Plan</string>
@@ -168,6 +171,8 @@
 
     <string name="um_bm02">Meal Name</string>
     <string name="um_lm01">Meal Name</string>
+ 
+
  
     <string name="SignUpHeight">cm</string>
 
@@ -258,6 +263,7 @@
     <string name="btndelete">DELETE</string>
 
 
+ 
  
 
 </resources>
