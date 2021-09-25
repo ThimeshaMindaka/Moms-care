@@ -46,7 +46,7 @@ public class PrenatalBodyCoachingFragment extends Fragment {
 
         viewAll();
 
-        tv1.setText("BMI calculated with a higher level than required needs to follow this workout package.");
+        tv1.setText("BEST prenatal  workout programs after having a baby");
 
         return v;
 

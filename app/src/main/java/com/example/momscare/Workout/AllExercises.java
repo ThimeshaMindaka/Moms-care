@@ -44,9 +44,7 @@ public class AllExercises extends AppCompatActivity {
 
     public void viewAll(){
         DBHelper dbHelper = new DBHelper(this);
-
         List unames = dbHelper.readAllInfo();
-
         for(Object woName : unames){
             arrayList.add(woName.toString());
         }
@@ -58,15 +56,12 @@ public class AllExercises extends AppCompatActivity {
                 String listItemName = parent.getItemAtPosition(position).toString();
                 WorkOut wt = new WorkOut();
                 wt = dbHelper.readOneWorkOutInfo(listItemName);
-
-
                 String woId = wt.getWorkoutID();
                 String name = wt.getWorkoutName();
                 String pkg = wt.getWorkoutPackage();
                 String due = wt.getWorkoutDuration();
                 String cal = wt.getWorkoutCalorie();
                 String steps = wt.getWorkoutSteps();
-
 
                 Intent intent = new Intent(AllExercises.this, ModifyExercise.class);
                 intent.putExtra("id", woId);

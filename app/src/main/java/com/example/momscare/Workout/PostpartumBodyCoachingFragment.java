@@ -43,7 +43,7 @@ public class PostpartumBodyCoachingFragment extends Fragment {
 
 
         viewAll();
-        tv1.setText("BMI calculated with a level lower than the required or in the normal level, is required to follow this workout package.");
+        tv1.setText("BEST postpartum workout programs after having a baby");
         return v;
     }
 

@@ -129,7 +129,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return userNames;
     }
 
-    //this method will read all the details of selected one record of the table
+    //this method will read all the details of selected one record of the  workout table
     public WorkOut readOneWorkOutInfo(String req){
 
         SQLiteDatabase db = getReadableDatabase();
