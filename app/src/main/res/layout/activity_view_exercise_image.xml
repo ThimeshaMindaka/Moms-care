@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bac4"
+    android:background="@drawable/bac5"
     tools:context=".Workout.ViewExerciseImage">
 
     <TextView
-        android:id="@+id/wo_imageTitle"
+        android:id="@+id/medtext"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"

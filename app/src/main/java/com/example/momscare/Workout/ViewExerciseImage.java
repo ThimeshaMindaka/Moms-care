@@ -33,7 +33,7 @@ public class ViewExerciseImage extends AppCompatActivity {
 
         viewExe_ImgView =findViewById(R.id.viewExe_ImgView);
         viewExeImg_btn1 = findViewById(R.id.viewExeImg_btn1);
-        wo_imageTitle = findViewById(R.id.wo_imageTitle);
+        wo_imageTitle = findViewById(R.id.medtext);
 
         wo_imageTitle.setText(workoutImageName);
 

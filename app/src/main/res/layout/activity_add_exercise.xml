@@ -120,12 +120,12 @@
         <EditText
             android:id="@+id/addExe_etn1"
             style="@style/Widget.AppCompat.AutoCompleteTextView"
-            android:layout_width="196dp"
+            android:layout_width="187dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="7dp"
+            android:layout_marginRight="16dp"
             android:background="@drawable/edittext"
             android:ems="10"
             android:fontFamily="@font/rammetto_one"
@@ -309,8 +309,12 @@
         android:id="@+id/imageView28"
         android:layout_width="72dp"
         android:layout_height="79dp"
-        app:srcCompat="@drawable/cycular2"
-        tools:layout_editor_absoluteX="374dp"
-        tools:layout_editor_absoluteY="308dp" />
+        android:layout_marginStart="376dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+        app:layout_constraintVertical_bias="0.068"
+        app:srcCompat="@drawable/cycular2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

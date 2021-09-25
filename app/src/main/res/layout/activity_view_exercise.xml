@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/ccc"
+    android:background="@drawable/exersi"
     tools:context=".Workout.ViewExercise">
 
     <ImageView
         android:id="@+id/imageView30"
-        android:layout_width="407dp"
-        android:layout_height="718dp"
+        android:layout_width="512dp"
+        android:layout_height="788dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/back6" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -46,6 +45,7 @@
 
     </LinearLayout>
 
+
     <TextView
         android:id="@+id/viewExe_tv2"
         android:layout_width="wrap_content"
@@ -55,11 +55,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64" />
-
 
     <ImageView
         android:id="@+id/imageView2"
@@ -72,12 +71,13 @@
         app:layout_constraintTop_toBottomOf="@+id/viewExe_tv2"
         app:srcCompat="@drawable/img1" />
 
+
     <TextView
         android:id="@+id/viewExe_tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:text="@string/WorkOutTimePeriod"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -89,13 +89,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="68dp"
         android:text="@string/WorkOutsteps"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewExe_tv3" />
-
 
     <TextView
         android:id="@+id/viewExe_tv5"

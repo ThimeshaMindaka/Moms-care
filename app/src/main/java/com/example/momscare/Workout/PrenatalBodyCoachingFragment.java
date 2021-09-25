@@ -35,7 +35,7 @@ public class PrenatalBodyCoachingFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_prenatal_body, container, false);
 
-        tv1 = v.findViewById(R.id.post_fragment_tv2);
+        tv1 = v.findViewById(R.id.postpartum_fragment_tv2);
 
         fatLossListView = (ListView)v.findViewById(R.id.fatLossListView);
         arrayList = new ArrayList<>();
@@ -46,7 +46,7 @@ public class PrenatalBodyCoachingFragment extends Fragment {
 
         viewAll();
 
-        tv1.setText("BMI calculated with a higher level than required needs to follow this workout package.");
+        tv1.setText("BEST prenatal  workout programs after having a baby");
 
         return v;
 

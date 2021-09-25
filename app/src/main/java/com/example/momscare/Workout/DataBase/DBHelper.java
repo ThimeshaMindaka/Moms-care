@@ -129,7 +129,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return userNames;
     }
 
-    //this method will read all the details of selected one record of the table
+    //this method will read all the details of selected one record of the  workout table
     public WorkOut readOneWorkOutInfo(String req){
 
         SQLiteDatabase db = getReadableDatabase();
@@ -227,7 +227,7 @@ public class DBHelper extends SQLiteOpenHelper {
         };
 
         String selection = WorkOutMaster.WorkOuts.COLUMN_NAME_WORKOUT_PACKAGE + "  = ? ";
-        String []selectionArgs = {"Muscle-Gain"};
+        String []selectionArgs = {"Postpartum"};
 
         Cursor cursor = db.query(WorkOutMaster.WorkOuts.TABLE_NAMES,
                 projection,
@@ -270,7 +270,7 @@ public class DBHelper extends SQLiteOpenHelper {
         };
 
         String selection = WorkOutMaster.WorkOuts.COLUMN_NAME_WORKOUT_PACKAGE + "  = ? ";
-        String []selectionArgs = {"Fat-Loss"};
+        String []selectionArgs = {"Prenatal"};
 
         Cursor cursor = db.query(WorkOutMaster.WorkOuts.TABLE_NAMES,
                 projection,

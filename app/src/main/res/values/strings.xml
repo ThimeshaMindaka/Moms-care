@@ -29,8 +29,8 @@
     <string name="txtResultHweight" />
     <string name="ResultBMI">BMI</string>
     <string name="UPtxt">User Profile</string>
-    <string name="UPbtnUpdate">Update Details</string>
-    <string name="UPtxtDelete">Delete Account</string>
+    <string name="UPbtnUpdate">Update</string>
+    <string name="UPtxtDelete">Delete </string>
     <string name="todotxt">To Do List</string>
     <string name="SignInuser_name">User Name</string>
     <string name="SignInPassword">Password</string>
@@ -43,7 +43,6 @@
     <string name="txtList_name">To Do List</string>
     <string name="SignIn">SIGN IN</string>
     <string name="button">BMI</string>
-    <string name="GETFIT">GET  FIT!</string>
     <string name="title_activity_drawer">Drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -88,8 +87,8 @@
     <string name="WorkOutupdatebtn">UPDATE</string>
     <string name="WorkOutShowbtn">RESET</string>
     <string-array name="Spinner_Item">
-        <item>Muscle-Gain</item>
-        <item>Fat-Loss</item>
+        <item>Postpartum</item>
+        <item>Prenatal</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -99,8 +98,8 @@
     <string name="calorieBurnOutBtn">CALORIES BURN OUT</string>
     <string name="WorkOutTimePeriod">Time Period(min)</string>
     <string name="WorkOutStart">START</string>
-    <string name="MuscleGainBtn">MUSCLE GAIN WORKOUT</string>
-    <string name="FatLossBtn">FAT-LOSS WORKOUT</string>
+    <string name="MuscleGainBtn">POSTPARTUM WORKOUT</string>
+    <string name="FatLossBtn">PRENATAL WORKOUT</string>
     <string name="WOpackages">WORK-OUT PACKAGES</string>
     <string name="woAllWorkOuts">List of Workouts</string>
     <string name="moveToWCBtn">Weight Converter</string>
@@ -114,10 +113,62 @@
     <string name="txt3">WORK OUTS DASHBORD</string>
     <string name="pernatal_frgmnt_tv1">Prenatal Body Coaching</string>
 
+
     <!-- -->
 
 
   <!-- Medical: Remove or change this placeholder text -->
+
+
+    <string name="nutrition_navigation">Navigation Menu</string>
+    <string name="btnAddMeal">Add a Meal Plan</string>
+    <string name="btnMacros">Macros</string>
+    <string name="btnViewMeal">View Meal Plans</string>
+    <string name="btnAdd">ADD</string>
+    <string name="txtMacroFoodName">Name of the food</string>
+    <string name="txtMacroName" />
+    <string name="txtViewServing" />
+    <string name="txtServingSize">Serving Size</string>
+    <string name="btnFindMacro">Find Macros</string>
+    <string name="txtEnergy">Energy</string>
+    <string name="txtViewEnergy" />
+    <string name="txtFat">Fat</string>
+    <string name="txtViewFat" />
+    <string name="txtCarbs">Carbohydrates</string>
+    <string name="txtViewCarbs" />
+    <string name="txtFiber">Fiber</string>
+    <string name="txtViewFiber" />
+    <string name="txtProtein">Protein</string>
+    <string name="txtViewProtein" />
+    <string name="txtSodium">Sodium</string>
+    <string name="txtViewSodium" />
+    <string name="txtCholesterol">Cholesterol</string>
+    <string name="txtViewCholesterol" />
+    <string name="txtPotasium">Potasium</string>
+    <string name="txtViewPotasium" />
+    <string name="btnUpdate">Update</string>
+    <string name="btnAddMacros">Add</string>
+    <string name="txtViewFoodID">Food ID</string>
+    <string name="txtViewFoodName">Food Name</string>
+    <string name="txtInFoodId" />
+    <string name="txtInFoodName" />
+    <string name="macro_cal">Macro Calculator</string>
+    <string name="macro_add_navigation">Add Macro Record</string>
+    <string name="add_meal">Add a Meal</string>
+    <string name="update_meal_navigation">Update Meal Plan</string>
+    <string name="view_meals_navigation">Meal Plans</string>
+    <string name="macros_navigation">Added Macros</string>
+
+
+    <string name="textView31">Calories</string>
+    <string name="textView6">Calories</string>
+
+    <string name="um_bm02">Meal Name</string>
+    <string name="um_lm01">Meal Name</string>
+
+
+    <!-- Medical: Remove or change this placeholder text -->
+
     <string name="txt8">Medical Shchedule </string>
     <string name="btn2">Add New Schedule</string>
     <string name="txt9">Name :</string>
@@ -199,5 +250,7 @@
     <string name="txt004" />
     <string name="medtext">Medical Schedule</string>
     <string name="btndelete">DELETE</string>
+
+
 
 </resources>

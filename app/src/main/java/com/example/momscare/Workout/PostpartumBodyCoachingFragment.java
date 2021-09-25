@@ -24,7 +24,7 @@ import java.util.List;
 public class PostpartumBodyCoachingFragment extends Fragment {
 
     TextView tv1;
-    private ListView muscleGainListView;
+    private ListView fatLossListView;
     private ArrayList<String> arrayList;
     private ArrayAdapter<String> adapter;
 
@@ -34,16 +34,16 @@ public class PostpartumBodyCoachingFragment extends Fragment {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_postpartum_body, container, false);
 
-        tv1 = v.findViewById(R.id.post_fragment_tv2);
-        muscleGainListView = (ListView)v.findViewById(R.id.postListView);
+        tv1 = v.findViewById(R.id.postpartum_fragment_tv2);
+        fatLossListView = (ListView)v.findViewById(R.id.fatLossListView);
         arrayList = new ArrayList<>();
         adapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_list_item_1,arrayList);
 
-        muscleGainListView.setAdapter(adapter);
+        fatLossListView.setAdapter(adapter);
 
 
         viewAll();
-        tv1.setText("BMI calculated with a level lower than the required or in the normal level, is required to follow this workout package.");
+        tv1.setText("BEST postpartum workout programs after having a baby");
         return v;
     }
 
@@ -61,7 +61,7 @@ public class PostpartumBodyCoachingFragment extends Fragment {
             Toast.makeText(getActivity().getApplicationContext(), "No Exercises Available", Toast.LENGTH_SHORT).show();
         }
 
-        muscleGainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        fatLossListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String listItemName = parent.getItemAtPosition(position).toString();

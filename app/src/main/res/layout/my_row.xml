@@ -42,9 +42,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 android:text="Title 1"
                 android:textColor="#000"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/list_id_txt"
                 app:layout_constraintTop_toTopOf="@+id/list_id_txt" />
